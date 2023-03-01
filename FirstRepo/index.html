@@ -13,11 +13,14 @@
     <link href="styles/myStyles.css" rel="stylesheet" />
   </head>
   <body>
+    <div class="page-header">
+      <p>Contact Number 0000000000000</p>
+    </div>
     <nav class="navbar navbar-expand-lg bg-body-tertiary">
       <div class="container-fluid">
-        <a class="navbar-brand" href="#">Creaven Engineering</a>
+        <a class="navbar-brand d-block d-lg-none" href="#">Creaven Engineering</a>
         <button
-          class="navbar-toggler"
+          class="navbar-toggler pull-right"
           type="button"
           data-bs-toggle="collapse"
           data-bs-target="#navbarTogglerDemo01"
@@ -27,15 +30,28 @@
         >
           <span class="navbar-toggler-icon"></span>
         </button>
-        <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
-          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <div class="collapse navbar-collapse " id="navbarTogglerDemo01">
+          <ul class="navbar-nav mb-2 mb-lg-0 flex-grow-1 justify-content-center nav-fill">
             <li class="nav-item">
               <a class="nav-link active" aria-current="page" href="#">Home</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Link</a>
+              <a class="nav-link" href="about.html">About</a>
             </li>
-          </ul>
+            <li class="nav-item">
+              <a class="nav-link" href="products.html">Products</a>
+            </li>
+            <a class="navbar-brand d-none d-lg-block" href="#"><img src="images/newMetalLogo.png" width="200px" alt="logo"></a>
+            <li class="nav-item">
+              <a class="nav-link" href="services.html">Services</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="products.html">Gallery</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="products.html">Links</a>
+            </li>
+          
         </div>
       </div>
     </nav>
@@ -44,13 +60,39 @@
       <!-- Put main contents here -->
     </div>
     <!-- Footer below -->
-    <div class="container text-center">
+    <div class="container-fluid">
       <div class="row">
-        <div class="col-lg-3 d-xs-none d-sm-none d-md-none d-lg-block">
-          Logo
+        <div class="col-lg-3 d-none d-lg-block">
+          <img src="images/newMetalLogo.png" alt="logo" class="img-fluid">
         </div>
-        <div class="col-lg-3">Links</div>
-        <div class="col-lg-6">Map</div>
+        <!-- footer links -->
+        <div class="col-lg-3">
+          <div class="row">
+            <div class="col d-flex flex-column footerLinks">
+              <h4>Website</h4>
+              <a href="index.html">Home</a>
+              <a href="about.html">About</a>
+              <a href="products.html">Products</a>
+              <a href="services.html">Services</a>
+              <a href="gallery.html">Gallery</a>
+              <a href="contact.html">Contact</a>
+              <a href="links.html">Links</a>
+            </div>
+            <div class="col d-flex flex-column">
+              <h4>Services</h4>
+              <div>Custom fabrication</div>
+              <div>Welding repairs</div>
+              <div>Garden sheds</div>
+              <div>Doors</div>
+              <div>Frames</div>
+              <div>Steel cutting-drilling</div>
+              <div>Mobile welding</div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-6 text-center">
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d9499.776006142389!2d-9.114910210179163!3d53.469460878508876!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x485bebe739cba97b%3A0xa00c7a99731d270!2sHeadford%2C%20Co.%20Galway!5e0!3m2!1sen!2sie!4v1677683049701!5m2!1sen!2sie" width="300" height="225" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
       </div>
     </div>
     <script

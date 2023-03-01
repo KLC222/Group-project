@@ -10,3 +10,26 @@ html, body {
 	/* fill all the space */
 	flex: 1;
 }
+.page-header > p{
+	float: right;
+	padding: 1em 2em 0.2em 1em;
+}
+
+
+/* Footer */
+
+@media (max-width: 991px) {
+	.footerLinks{
+		padding-left: 200px;
+	}
+  }
+  @media (max-width: 615px) {
+	.footerLinks{
+		padding-left: 100px;
+	}
+  }
+  @media (max-width: 450px) {
+	.footerLinks{
+		padding-left: 30px;
+	}
+  }
