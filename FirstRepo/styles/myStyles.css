@@ -1,4 +1,6 @@
 
+/* Index Page */
+
 html, body {
 	/* use flexbox use entire height */
 	display: flex;
@@ -10,15 +12,19 @@ html, body {
 	/* fill all the space */
 	flex: 1;
 }
-.page-header > p{
-	float: right;
-	padding: 1em 2em 0.2em 1em;
+.header-top {
+	background-color: #646263;
+}
+#header-top-phone {
+	color: white;
 }
 
-
 /* Footer */
+.footer-background {
+	background-color: #C9C5C7;
+}
 
-@media (max-width: 991px) {
+ @media (max-width: 991px) {
 	.footerLinks{
 		padding-left: 200px;
 	}
@@ -30,6 +36,27 @@ html, body {
   }
   @media (max-width: 450px) {
 	.footerLinks{
-		padding-left: 30px;
+		padding-left: 20px;
 	}
-  }
+  } 
+/* Index Page-end */
+
+/* About Page */
+
+/* About Page-end */
+
+/* Products Page */
+
+/* Products Page-end */
+
+/* Contact Page */
+
+/* Contact Page-end */
+
+/* Services Page */
+
+/* Services Page-end */
+
+/* Gallery Page */
+
+/* Gallery Page-end */
