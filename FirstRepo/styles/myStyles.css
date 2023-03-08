@@ -1,44 +1,80 @@
-
 /* Index Page */
 
-html, body {
-	/* use flexbox use entire height */
-	display: flex;
-	flex-direction: column;
-	height: 100vh;
+html,
+body {
+  /* use flexbox use entire height */
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
 }
 
 .main {
-	/* fill all the space */
-	flex: 1;
+  /* fill all the space */
+  flex: 1;
 }
 .header-top {
-	background-color: #646263;
+  background-color: #646263;
 }
 #header-top-phone {
-	color: white;
+  color: white;
+}
+.metal-background {
+  background-image: url(images/metalBackground);
+}
+
+.btn-custom {
+  background-color: #d62d1b;
+  color: white;
+  border-radius: 50px;
+  transition: all 0.35s;
+}
+.btn-custom:hover {
+  background-color: #b82111;
+  color: white;
+}
+
+.card-img-overlay {
+  padding: 0;
+  color: white;
+  background-color: rgba(0, 0, 0, 0.6);
+  opacity: 0;
+  transition: all ease 0.4s;
+}
+.card:hover .card-img-overlay {
+  padding-bottom: 50px;
+  opacity: 1;
+}
+
+.metal {
+  background: linear-gradient(
+    #cccccc,
+    #f2f2f2
+  ); /* create a gradient background */
+  box-shadow: 0 0 10px #666666; /* add a shadow effect */
+  padding: 20px; /* add some padding */
+  color: #333333; /* set the text color */
 }
 
 /* Footer */
 .footer-background {
-	background-color: #C9C5C7;
+  background-color: #c9c5c7;
 }
 
- @media (max-width: 991px) {
-	.footerLinks{
-		padding-left: 200px;
-	}
+@media (max-width: 991px) {
+  .footerLinks {
+    padding-left: 200px;
   }
-  @media (max-width: 615px) {
-	.footerLinks{
-		padding-left: 100px;
-	}
+}
+@media (max-width: 615px) {
+  .footerLinks {
+    padding-left: 100px;
   }
-  @media (max-width: 450px) {
-	.footerLinks{
-		padding-left: 20px;
-	}
-  } 
+}
+@media (max-width: 450px) {
+  .footerLinks {
+    padding-left: 20px;
+  }
+}
 /* Index Page-end */
 
 /* About Page */
