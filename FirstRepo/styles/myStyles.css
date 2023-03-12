@@ -106,8 +106,8 @@ body {
   transform: rotateY(0deg);
 }
 /* https://www.demo2s.com/html-css/css-animation-to-move-image-from-left-to-right-and-back.html */
-#image-ani-1 {
-}
+/* #image-ani-1 {
+} */
 #image-ani-2 {
   animation-delay: 3s;
 }
