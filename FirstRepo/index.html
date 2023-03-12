@@ -14,12 +14,16 @@
   </head>
   <body>
     <!-- header -->
+    <div class="brand-container"></div>
     <div class="header-top">
       <div class="container text-end pt-3">
         <p id="header-top-phone">Contact Number 0000000000000</p>
       </div>
     </div>
-    <nav class="navbar navbar-expand-lg" style="background-color: #ffffff">
+    <nav
+      class="navbar navbar-expand-lg sticky-lg-top"
+      style="background-color: #ffffff"
+    >
       <div class="container">
         <a class="navbar-brand d-block d-lg-none" href="#"
           ><img src="images/newMetalLogo.png" width="200px" alt="logo"
@@ -37,19 +41,22 @@
         </button>
         <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
           <ul
-            class="navbar-nav mb-2 mb-lg-0 flex-grow-1 justify-content-center nav-fill"
+            class="navbar-nav mb-2 mb-lg-0 flex-grow-1 justify-content-center nav-fill align-items-center"
           >
             <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#">Home</a>
+              <a class="nav-link active" aria-current="page" href="index.html"
+                >Home</a
+              >
             </li>
             <li class="nav-item">
+              <span class="nav-background"></span>
               <a class="nav-link" href="about.html">About</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="products.html">Products</a>
             </li>
-            <a class="navbar-brand d-none d-lg-block" href="#"
-              ><img src="images/newMetalLogo.png" width="200px" alt="logo"
+            <a class="brand-large" href="#"
+              ><img src="images/newMetalLogo.png" width="300px" alt="logo"
             /></a>
             <li class="nav-item">
               <a class="nav-link" href="services.html">Services</a>
@@ -64,27 +71,32 @@
         </div>
       </div>
     </nav>
+    <!-- header end -->
     <!-- Main -->
     <div class="container text-center">
-      <div class="row pb-5">
+      <div class="row pb-4">
         <div class="col">
           <!-- carousel -->
-          <div id="carouselExampleFade" class="carousel slide carousel-fade">
+          <div
+            id="carouselExampleRide"
+            class="carousel slide"
+            data-bs-ride="true"
+          >
             <div class="carousel-inner">
               <div class="carousel-item active">
-                <img src="images/shed.jpeg" class="d-block w-100" alt="..." />
+                <img src="images/2.jpeg" class="d-block w-100" alt="..." />
               </div>
               <div class="carousel-item">
-                <img src="images/shed.jpeg" class="d-block w-100" alt="..." />
+                <img src="images/1.jpeg" class="d-block w-100" alt="..." />
               </div>
               <div class="carousel-item">
-                <img src="images/shed.jpeg" class="d-block w-100" alt="..." />
+                <img src="images/3.jpeg" class="d-block w-100" alt="..." />
               </div>
             </div>
             <button
               class="carousel-control-prev"
               type="button"
-              data-bs-target="#carouselExampleFade"
+              data-bs-target="#carouselExampleRide"
               data-bs-slide="prev"
             >
               <span
@@ -96,7 +108,7 @@
             <button
               class="carousel-control-next"
               type="button"
-              data-bs-target="#carouselExampleFade"
+              data-bs-target="#carouselExampleRide"
               data-bs-slide="next"
             >
               <span
@@ -105,12 +117,15 @@
               ></span>
               <span class="visually-hidden">Next</span>
             </button>
+            <div class="caro-message">Custom fabrication</div>
           </div>
+          <!-- Crousel end -->
         </div>
       </div>
     </div>
-    <div class="metal">
-      <div class="container text-center">
+
+    <div class="container text-center">
+      <div class="metal">
         <div class="row py-5">
           <div class="col">
             <!-- row2 Column -->
@@ -128,7 +143,7 @@
       </div>
     </div>
     <div class="container">
-      <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 py-4 gy-4">
+      <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 py-5 gy-4">
         <div class="col">
           <div class="card">
             <img src="images/Services.png" class="card-img" height="300" />
@@ -161,7 +176,7 @@
         </div>
         <div class="col">
           <div class="card">
-            <img src="" class="card-img" height="300" />
+            <img src="images/temp-contact.jpeg" class="card-img" height="300" />
             <div
               class="card-img-overlay d-flex flex-column justify-content-end text-center"
             >
@@ -177,7 +192,7 @@
       </div>
       <!-- row 4 -->
 
-      <div class="row py-4">
+      <div class="row py-5">
         <div class="col-12 col-md-6">
           <p>
             just example text here from cardboard to steel plates and cleats
@@ -190,7 +205,31 @@
             </button>
           </div>
         </div>
-        <div class="col-12 col-md-6">row4 Column</div>
+        <div class="col-12 col-md-6 py-5">
+          <div class="image-ani-container">
+            <img
+              src="images/cleats4.jpeg"
+              width="200"
+              class="image-ani rounded"
+              id="image-ani-1"
+              alt="cleats4"
+            />
+            <img
+              src="images/cleats.jpg"
+              width="200"
+              class="image-ani rounded"
+              id="image-ani-2"
+              alt="cleats"
+            />
+            <img
+              src="images/creats3.jpeg"
+              width="200"
+              class="image-ani rounded"
+              id="image-ani-3"
+              alt="cleats3"
+            />
+          </div>
+        </div>
       </div>
     </div>
 

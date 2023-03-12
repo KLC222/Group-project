@@ -8,18 +8,54 @@ body {
   height: 100vh;
 }
 
+.brand-large {
+  display: inline-block;
+  /* background-color: white; */
+  padding: 0 20px 0 20px;
+  margin-top: -20px;
+}
+
 .main {
   /* fill all the space */
   flex: 1;
 }
 .header-top {
-  background-color: #646263;
+  background-color: #c9c5c7;
 }
 #header-top-phone {
   color: white;
 }
 .metal-background {
-  background-image: url(images/metalBackground);
+  position: absolute;
+}
+.active {
+  color: #d62d1b;
+}
+.nav-link:hover {
+  color: #d62d1b;
+}
+/* .nav-item {
+  position: relative;
+}
+
+.nav-background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0;
+  bottom: 0;
+  z-index: -1;
+  background-color: #b82111;
+  transition: width ease 0.3s;
+}
+.nav-item:hover .nav-background {
+  width: 100%;
+} */
+.caro-message {
+  position: relative;
+  top: -60px;
+  left: -300px;
+  color: #f2f2f2;
 }
 
 .btn-custom {
@@ -55,6 +91,47 @@ body {
   color: #333333; /* set the text color */
 }
 
+.image-ani-container {
+  position: relative;
+  height: 200px;
+  overflow: hidden;
+}
+
+.image-ani {
+  position: absolute;
+  left: -200px;
+  animation: linear infinite;
+  animation-name: run;
+  animation-duration: 8s;
+  transform: rotateY(0deg);
+}
+/* https://www.demo2s.com/html-css/css-animation-to-move-image-from-left-to-right-and-back.html */
+#image-ani-1 {
+}
+#image-ani-2 {
+  animation-delay: 3s;
+}
+#image-ani-3 {
+  animation-delay: 5s;
+}
+
+@keyframes run {
+  0% {
+    left: -200px;
+    /* opacity: 0; */
+  }
+  20% {
+    opacity: 1;
+  }
+  70% {
+    opacity: 1;
+  }
+  100% {
+    left: 100%;
+    opacity: 0;
+  }
+}
+
 /* Footer */
 .footer-background {
   background-color: #c9c5c7;
@@ -75,6 +152,7 @@ body {
     padding-left: 20px;
   }
 }
+
 /* Index Page-end */
 
 /* About Page */
