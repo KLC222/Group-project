@@ -69,16 +69,33 @@ body {
   color: white;
 }
 
-.card-img-overlay {
-  padding: 0;
+.card-overlay-text {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  padding: 20px;
   color: white;
   background-color: rgba(0, 0, 0, 0.6);
   opacity: 0;
   transition: all ease 0.4s;
 }
-.card:hover .card-img-overlay {
-  padding-bottom: 50px;
+.card:hover .card-overlay-text {
+  padding-bottom: 70px;
   opacity: 1;
+}
+
+.card-img-overlay {
+  cursor: pointer;
+}
+.card-img-overlay .card-title {
+  z-index: 1;
+  color: white;
+  text-shadow: #333333 1px 1px 3px;
 }
 
 .metal {
