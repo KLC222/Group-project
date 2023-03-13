@@ -8,11 +8,22 @@
 .metal-background {
   position: absolute;
 }
-.active {
+/* .navbar-nav .nav-link.active {
   color: #d62d1b;
 }
 .nav-link:hover {
-  color: #d62d1b;
+  color: #c9c5c7;
+  text-shadow: #d62d1b 0 0 3px;
+} */
+.nav-link {
+  background: linear-gradient(to right, rgba(255, 255, 255, 0), #d62d1b);
+  background-size: 0 3px;
+  background-position: 0 100%;
+  background-repeat: no-repeat;
+  transition: background-size 300ms;
+}
+.nav-link:hover {
+  background-size: 100% 3px;
 }
 
 /* .nav-item {
