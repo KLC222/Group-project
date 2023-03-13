@@ -1,24 +1,4 @@
-/* Index Page */
-
-html,
-body {
-  /* use flexbox use entire height */
-  display: flex;
-  flex-direction: column;
-  height: 100vh;
-}
-
-.brand-large {
-  display: inline-block;
-  /* background-color: white; */
-  padding: 0 20px 0 20px;
-  margin-top: -20px;
-}
-
-.main {
-  /* fill all the space */
-  flex: 1;
-}
+/* header */
 .header-top {
   background-color: #c9c5c7;
 }
@@ -34,6 +14,7 @@ body {
 .nav-link:hover {
   color: #d62d1b;
 }
+
 /* .nav-item {
   position: relative;
 }
@@ -51,6 +32,55 @@ body {
 .nav-item:hover .nav-background {
   width: 100%;
 } */
+/* end of header */
+
+/* Footer */
+.footer-background {
+  background-color: #c9c5c7;
+}
+
+@media (max-width: 991px) {
+  .footerLinks {
+    padding-left: 200px;
+  }
+}
+@media (max-width: 615px) {
+  .footerLinks {
+    padding-left: 100px;
+  }
+}
+@media (max-width: 450px) {
+  .footerLinks {
+    padding-left: 20px;
+  }
+}
+
+/* end of footer */
+
+/* Index Page */
+
+html,
+body {
+  /* use flexbox use entire height */
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+.active {
+  color: blue;
+}
+.brand-large {
+  display: inline-block;
+  /* background-color: white; */
+  padding: 0 0 0 80px;
+  /* margin-top: -px; */
+}
+
+.main {
+  /* fill all the space */
+  flex: 1;
+}
+
 .caro-message {
   position: relative;
   top: -60px;
@@ -149,26 +179,7 @@ body {
   }
 }
 
-/* Footer */
-.footer-background {
-  background-color: #c9c5c7;
-}
-
-@media (max-width: 991px) {
-  .footerLinks {
-    padding-left: 200px;
-  }
-}
-@media (max-width: 615px) {
-  .footerLinks {
-    padding-left: 100px;
-  }
-}
-@media (max-width: 450px) {
-  .footerLinks {
-    padding-left: 20px;
-  }
-}
+/* end of index page */
 
 /* Index Page-end */
 
