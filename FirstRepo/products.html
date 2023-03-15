@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Creaven Engineering | Products</title>
+    <title>Products</title>
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
       rel="stylesheet"
@@ -13,15 +13,20 @@
     <link href="styles/myStyles.css" rel="stylesheet" />
   </head>
   <body>
+    <!-- header -->
+    <div class="brand-container"></div>
     <div class="header-top">
       <div class="container text-end pt-3">
         <p id="header-top-phone">Contact Number 0000000000000</p>
       </div>
     </div>
-    <nav class="navbar navbar-expand-lg" style="background-color: #ffffff">
+    <nav
+      class="navbar navbar-expand-lg sticky-lg-top"
+      style="background-color: #ffffff"
+    >
       <div class="container">
         <a class="navbar-brand d-block d-lg-none" href="#"
-          ><img src="images/newMetalLogo.png" width="200px" alt="logo"
+          ><img src="images/new.png" width="200px" alt="logo"
         /></a>
         <button
           class="navbar-toggler pull-right"
@@ -36,19 +41,25 @@
         </button>
         <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
           <ul
-            class="navbar-nav mb-2 mb-lg-0 flex-grow-1 justify-content-center nav-fill"
+            class="navbar-nav mb-2 mb-lg-0 flex-grow-1 justify-content-center nav-fill align-items-center"
           >
             <li class="nav-item">
-              <a class="nav-link " href="index.html">Home</a>
+              <a class="nav-link"  href="index.html"
+                >Home</a
+              >
             </li>
             <li class="nav-item">
+              <span class="nav-background"></span>
               <a class="nav-link" href="about.html">About</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#">Products</a>
+              <a class="nav-link active" aria-current="page" href="products.html">Products</a>
             </li>
-            <a class="navbar-brand d-none d-lg-block" href="#"
-              ><img src="images/newMetalLogo.png" width="200px" alt="logo"
+            <a class="brand-large col-lg-3 d-none d-lg-block" href="index.html"
+              ><img
+                src="images/LogoAnimationWhite.gif"
+                width="300px"
+                alt="logo"
             /></a>
             <li class="nav-item">
               <a class="nav-link" href="services.html">Services</a>
@@ -70,11 +81,12 @@
     
     
           <div class="container">
-            <div class="search-container">
-              <input type="text" id="search-input" placeholder="Search...">
-              <button type="button" id="search-button">Search</button>
-            </div>
+            
             <div class="filter-container">
+                <div class="search-container">
+                    <input type="text" id="search-input" placeholder="Search...">
+                    <button type="button" id="search-button">Search</button>
+                  </div>
               <select id="filter1">
                 <option value="">All Products</option>
                 <option value="electronics">Electronics</option>
@@ -88,86 +100,80 @@
               <option value="30">$30 and under</option>
             </select>
           </div>
-          <div class="row row-cols-1 row-cols-md-2 row-cols-xl-4 py-4" id="product-cards">
-            <div class="product-card" data-category="electronics" data-price="20">
-              <img src="https://via.placeholder.com/300x200.png?text=Product+Image" alt="Product Image">
-              <h3>Product 1</h3>
-              <p>Description of Product 1</p>
-              <button type="button">Add to Cart</button>
-            </div>
-            <div class="product-card" data-category="clothing" data-price="30">
-              <img src="https://via.placeholder.com/300x200.png?text=Product+Image" alt="Product Image">
-              <h3>Product 2</h3>
-              <p>Description of Product 2</p>
-              <button type="button">Add to Cart</button>
-            </div>
-            <div class="product-card" data-category="beauty" data-price="15">
-              <img src="https://via.placeholder.com/300x200.png?text=Product+Image" alt="Product Image">
-              <h3>Product 3</h3>
-              <p>Description of Product 3</p>
-              <button type="button">Add to Cart</button>
-            </div>
-            <!-- Add 9 more product cards -->
-            
+
+
+
+          <div class="row row-cols-1 row-cols-md-2 row-cols-xl-4 py-4" id="product-cards"></div>
           
-           
             <div class="product-card" data-category="electronics" data-price="20">
-              <img src="https://via.placeholder.com/300x200.png?text=Product+Image" alt="Product Image">
+              <img src="images/Bolts.jpg" alt="Product Image">
+              <h3>Bolts</h3>
+              <p>Description of Bolts</p>
+              <button type="button">Add to Cart</button>
+            </div>
+            <div class="counter-container">
+              <button class="counter-btn minus-btn">-</button>
+              <input type="text" class="counter-input" value="1">
+              <button class="counter-btn plus-btn">+</button>
+            </div>
+           
+            <div class="product-card" data-category="clothing" data-price="30">
+              <img src="images/cleats.jpg" alt="Product Image">
+              <h3>Cleats</h3>
+              <p>Description of Cleats</p>
+              <button type="button">Add to Cart</button>
+            </div>
+            
+            <div class="product-card" data-category="beauty" data-price="15">
+              <img src="images/Bolts.jpg" alt="Product Image">
+              <h3>Hinges</h3>
+              <p>Description of Hinges</p>
+              <button type="button">Add to Cart</button>
+            </div>
+
+            <div class="product-card" data-category="electronics" data-price="20">
+              <img src="images/Bolts.jpg" alt="Product Image">
               <h3>Product 4</h3>
               <p>Description of Product 1</p>
               <button type="button">Add to Cart</button>
             </div>
+
             <div class="product-card" data-category="clothing" data-price="30">
-              <img src="https://via.placeholder.com/300x200.png?text=Product+Image" alt="Product Image">
+              <img src="images/Bolts.jpg" alt="Product Image">
               <h3>Product 5</h3>
               <p>Description of Product 2</p>
               <button type="button">Add to Cart</button>
             </div>
+
             <div class="product-card" data-category="beauty" data-price="15">
-              <img src="https://via.placeholder.com/300x200.png?text=Product+Image" alt="Product Image">
+              <img src="images/cleats.jpg" alt="Product Image">
               <h3>Product 6</h3>
               <p>Description of Product 3</p>
               <button type="button">Add to Cart</button>
             </div>
            
             <div class="product-card" data-category="electronics" data-price="20">
-              <img src="https://via.placeholder.com/300x200.png?text=Product+Image" alt="Product Image">
+              <img src="images/cleats.jpg" alt="Product Image">
               <h3>Product 4</h3>
               <p>Description of Product 1</p>
               <button type="button">Add to Cart</button>
             </div>
-            <div class="product-card" data-category="clothing" data-price="30">
-              <img src="https://via.placeholder.com/300x200.png?text=Product+Image" alt="Product Image">
+
+            <div class="product-card" data-category="clothing" data-price="10">
+              <img src="images/cleats.jpg" alt="Product Image">
               <h3>Product 5</h3>
               <p>Description of Product 2</p>
               <button type="button">Add to Cart</button>
             </div>
+
             <div class="product-card" data-category="beauty" data-price="15">
-              <img src="https://via.placeholder.com/300x200.png?text=Product+Image" alt="Product Image">
+              <img src="images/cleats.jpg" alt="Product Image">
               <h3>Product 6</h3>
               <p>Description of Product 3</p>
               <button type="button">Add to Cart</button>
             </div>
 
-            <div class="product-card" data-category="electronics" data-price="20">
-              <img src="https://via.placeholder.com/300x200.png?text=Product+Image" alt="Product Image">
-              <h3>Product 4</h3>
-              <p>Description of Product 1</p>
-              <button type="button">Add to Cart</button>
-            </div>
-            <div class="product-card" data-category="clothing" data-price="30">
-              <img src="https://via.placeholder.com/300x200.png?text=Product+Image" alt="Product Image">
-              <h3>Product 5</h3>
-              <p>Description of Product 2</p>
-              <button type="button">Add to Cart</button>
-            </div>
-            <div class="product-card" data-category="beauty" data-price="15">
-              <img src="https://via.placeholder.com/300x200.png?text=Product+Image" alt="Product Image">
-              <h3>Product 6</h3>
-              <p>Description of Product 3</p>
-              <button type="button">Add to Cart</button>
-            </div>
-            
+           
          
           
         </div>
@@ -180,8 +186,12 @@
     <div class="footer-background">
       <div class="container">
         <div class="row py-4">
-          <div class="col-lg-3 d-none d-lg-block">
-            <img src="images/newMetalLogo.png" alt="logo" class="img-fluid" />
+          <div class="col-lg-3 d-none d-lg-block pt-5">
+            <img
+              src="images/LogoAnimationGrey.gif"
+              alt="logo"
+              class="img-fluid"
+            />
           </div>
           <!-- footer links -->
           <div class="col-lg-3">

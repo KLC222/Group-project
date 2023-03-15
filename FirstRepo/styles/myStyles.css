@@ -206,6 +206,168 @@ body {
 
 /* Products Page */
 
+body {
+	font-family: Arial, sans-serif;
+	margin: 0;
+	padding: 0;
+}
+
+h3 {
+  text-align: center;
+  padding-top: 30px;
+}
+
+.search-container {
+	width: 90%;
+  margin: auto;
+  margin-top: 5%;
+}
+
+.search-container {
+	width: 500px;
+	display: flex;
+	align-items: center;
+	margin-bottom: 20px;
+}
+
+.search-container input[type=text] {
+	padding: 10px;
+	border: none;
+	width: 70%;
+	font-size: 17px;
+	margin-right: 10px;
+}
+
+.search-container button {
+	background-color: #d62d1b;
+	color: white;
+	padding: 10px;
+	border: none;
+	cursor: pointer;
+	width: 30%;
+  font-size: 17px;
+  border-radius: 2px;
+}
+
+.search-container button:hover {
+  background-color: #b82111;
+  color: white;
+}
+
+.filter-container {
+	display: flex;
+	align-items: center;
+	margin-bottom: 20px;
+}
+
+.filter-container select {
+	padding: 10px;
+	border: none;
+  width: 15%;
+	font-size: 17px;
+	margin-right: 10px;
+}
+
+.product-card {
+	border: 1px solid #ccc;
+	padding: 50px;
+	margin: 50px;
+	width: 100%;
+	height: 500px;
+	display: inline-block;
+	box-sizing: border-box;
+	position: relative;
+  border-radius: 5px;
+  transition: box-shadow 0.1s, transform 0.1s;
+}
+
+.product-card img {
+	max-width: 100%;
+	max-height: 200px;
+	margin-bottom: 30px;
+  
+}
+.product-card img {
+display: block;
+margin: 0 auto;
+}
+
+.product-card h3 {
+	font-size: 20px;
+	margin-bottom: 10px;
+}
+
+.product-card p {
+	font-size: 16px;
+	margin-bottom: 10px;
+}
+
+.product-card button {
+	background-color: #d62d1b;
+	color: rgb(255, 255, 255);
+	padding: 10px;
+	border: none;
+	cursor: pointer;
+	width: 100%;
+	font-size: 17px;
+	position: absolute;
+	bottom: 0;
+	left: 0;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+
+.product-card button:hover {
+  background-color: #b82111;
+  color: white;
+}
+
+
+
+.product-card {
+	display: inline-block;
+	padding: 10px;
+	box-sizing: border-box;
+	width: 25%;
+	vertical-align: top;
+}
+
+
+/* Styles for the tilt block */
+
+
+.product-card:hover {
+  box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.6);
+  cursor: pointer;
+}
+
+
+.counter-btn {
+  background-color: #d62d1b;
+  color: rgb(255, 255, 255);
+  padding: 10px;
+  border: none;
+  cursor: pointer;
+  font-size: 20px;
+  font-weight: bold;
+  border-radius: 5px;
+}
+
+.counter-btn:hover {
+  background-color: #b82111;
+  color: white;
+}
+
+.counter-input {
+  border: 1px solid #ccc;
+  padding: 10px;
+  margin: 0 10px;
+  text-align: center;
+  font-size: 20px;
+  width: 50px;
+  border-radius: 5px;
+}
+
 /* Products Page-end */
 
 /* Contact Page */
