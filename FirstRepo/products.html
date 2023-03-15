@@ -10,6 +10,7 @@
       integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD"
       crossorigin="anonymous"
     />
+
     <link href="styles/myStyles.css" rel="stylesheet" />
   </head>
   <body>
@@ -65,7 +66,7 @@
               <a class="nav-link" href="services.html">Services</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="products.html">Gallery</a>
+              <a class="nav-link" href="gallery.html">Gallery</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="products.html">Links</a>
@@ -76,109 +77,106 @@
     </nav>
     <!-- Main -->
 
-    
+   
         
+    <!-- ADD CODE HERE -->
+    <div class="container mt-5">
+      
+      <div id="shop-image" class="text-center mt-4 position-relative">
+        <h1 class="shop-text">Enquire About Products</h1>
+      </div>
+
+      <div class="d-flex justify-content-center mt-5 mb-5">
+        <input
+          type="text"
+          id="search-bar"
+          class="form-control"
+          placeholder="Search for products"
+          onkeyup="searchProducts()"
+        />
+        <button class="btn btn-search">
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" viewBox="0 0 24 24">
+            <path d="M10 2C5.58 2 2 5.58 2 10C2 14.42 5.58 18 10 18C12.04 18 13.85 17.04 15.12 15.66L15.66 16.2L20.7 21.24C21.09 21.63 21.75 21.63 22.14 21.24C22.53 20.85 22.53 20.19 22.14 19.8L17.1 14.76L16.56 15.3C17.96 13.85 19 11.99 19 10C19 5.58 15.42 2 10 2M10 4C13.31 4 16 6.69 16 10C16 13.31 13.31 16 10 16C6.69 16 4 13.31 4 10C4 6.69 6.69 4 10 4Z"/>
+          </svg>
+        </button>
+      </div>
+      
+
     
+
     
-          <div class="container">
-            
-            <div class="filter-container">
-                <div class="search-container">
-                    <input type="text" id="search-input" placeholder="Search...">
-                    <button type="button" id="search-button">Search</button>
-                  </div>
-              <select id="filter1">
-                <option value="">All Products</option>
-                <option value="electronics">Electronics</option>
-                <option value="clothing">Clothing</option>
-                <option value="beauty">Beauty</option>
-              </select>
-              <select id="filter2">
-                <option value="">All Prices</option>
-                <option value="10">$10 and under
-              <option value="20">$20 and under</option>
-              <option value="30">$30 and under</option>
-            </select>
+      <div class="row mt-4" id="product-container">
+        <!-- Example product box -->
+        <div class="col-lg-4 col-md-6 mb-4 product-box" data-keywords="bolt">
+          <div class="card h-100">
+            <img src="images/Bolts.jpg" class="card-img-top" alt="Bolt" />
+            <div class="card-body">
+              <h5 class="card-title">Bolt</h5>
+              <button class="btn btn-primary">View Item</button>
+            </div>
           </div>
-
-
-
-          <div class="row row-cols-1 row-cols-md-2 row-cols-xl-4 py-4" id="product-cards"></div>
-          
-            <div class="product-card" data-category="electronics" data-price="20">
-              <img src="images/Bolts.jpg" alt="Product Image">
-              <h3>Bolts</h3>
-              <p>Description of Bolts</p>
-              <button type="button">Add to Cart</button>
-            </div>
-            <div class="counter-container">
-              <button class="counter-btn minus-btn">-</button>
-              <input type="text" class="counter-input" value="1">
-              <button class="counter-btn plus-btn">+</button>
-            </div>
-           
-            <div class="product-card" data-category="clothing" data-price="30">
-              <img src="images/cleats.jpg" alt="Product Image">
-              <h3>Cleats</h3>
-              <p>Description of Cleats</p>
-              <button type="button">Add to Cart</button>
-            </div>
-            
-            <div class="product-card" data-category="beauty" data-price="15">
-              <img src="images/Bolts.jpg" alt="Product Image">
-              <h3>Hinges</h3>
-              <p>Description of Hinges</p>
-              <button type="button">Add to Cart</button>
-            </div>
-
-            <div class="product-card" data-category="electronics" data-price="20">
-              <img src="images/Bolts.jpg" alt="Product Image">
-              <h3>Product 4</h3>
-              <p>Description of Product 1</p>
-              <button type="button">Add to Cart</button>
-            </div>
-
-            <div class="product-card" data-category="clothing" data-price="30">
-              <img src="images/Bolts.jpg" alt="Product Image">
-              <h3>Product 5</h3>
-              <p>Description of Product 2</p>
-              <button type="button">Add to Cart</button>
-            </div>
-
-            <div class="product-card" data-category="beauty" data-price="15">
-              <img src="images/cleats.jpg" alt="Product Image">
-              <h3>Product 6</h3>
-              <p>Description of Product 3</p>
-              <button type="button">Add to Cart</button>
-            </div>
-           
-            <div class="product-card" data-category="electronics" data-price="20">
-              <img src="images/cleats.jpg" alt="Product Image">
-              <h3>Product 4</h3>
-              <p>Description of Product 1</p>
-              <button type="button">Add to Cart</button>
-            </div>
-
-            <div class="product-card" data-category="clothing" data-price="10">
-              <img src="images/cleats.jpg" alt="Product Image">
-              <h3>Product 5</h3>
-              <p>Description of Product 2</p>
-              <button type="button">Add to Cart</button>
-            </div>
-
-            <div class="product-card" data-category="beauty" data-price="15">
-              <img src="images/cleats.jpg" alt="Product Image">
-              <h3>Product 6</h3>
-              <p>Description of Product 3</p>
-              <button type="button">Add to Cart</button>
-            </div>
-
-           
-         
-          
         </div>
+
+        <div class="col-lg-4 col-md-6 mb-4 product-box" data-keywords="hinge">
+          <div class="card h-100">
+            <img src="images/hinge.jpg" class="card-img-top" alt="hinge" />
+            <div class="card-body">
+              <h5 class="card-title">Hinge</h5>
+              <button class="btn btn-primary">View Item</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-4 col-md-6 mb-4 product-box" data-keywords="Cleat">
+          <div class="card h-100">
+            <img src="images/cleats.jpg" class="card-img-top" alt="Cleat" />
+            <div class="card-body">
+              <h5 class="card-title">Cleat</h5>
+              <button class="btn btn-primary">View Item</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-4 col-md-6 mb-4 product-box" data-keywords="product1">
+          <div class="card h-100">
+            <img src="images/Bolts.jpg" class="card-img-top" alt="Product 1" />
+            <div class="card-body">
+              <h5 class="card-title">Product 1</h5>
+              <button class="btn btn-primary">View Item</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-4 col-md-6 mb-4 product-box" data-keywords="product1">
+          <div class="card h-100">
+            <img src="images/Bolts.jpg" class="card-img-top" alt="Product 1" />
+            <div class="card-body">
+              <h5 class="card-title">Product 1</h5>
+              <button class="btn btn-primary">View Item</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-4 col-md-6 mb-4 product-box" data-keywords="product1">
+          <div class="card h-100">
+            <img src="images/Bolts.jpg" class="card-img-top" alt="Product 1" />
+            <div class="card-body">
+              <h5 class="card-title">Product 1</h5>
+              <button class="btn btn-primary">View Item</button>
+            </div>
+          </div>
+        </div>
+
+        
+        <!-- Add more product boxes as needed -->
+      </div>
     </div>
-  
+    
+    
+
+    
+    
+
 
 <script src="scripts/myScripts.js"></script>
 
