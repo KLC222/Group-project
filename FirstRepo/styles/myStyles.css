@@ -323,6 +323,11 @@ body {
   transform: translateY(0);
 }
 
+.product-box img {
+  max-height: 400px;
+  width: auto; /* Maintain aspect ratio */
+  object-fit: cover; /* This makes sure the image is resized and cropped to fit the container */
+}
 
 /* Products Page-end */
 
