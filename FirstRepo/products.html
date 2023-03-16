@@ -3,25 +3,31 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Creaven Engineering | Products</title>
+    <title>Products</title>
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
       rel="stylesheet"
       integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD"
       crossorigin="anonymous"
     />
+
     <link href="styles/myStyles.css" rel="stylesheet" />
   </head>
   <body>
+    <!-- header -->
+    <div class="brand-container"></div>
     <div class="header-top">
       <div class="container text-end pt-3">
         <p id="header-top-phone">Contact Number 0000000000000</p>
       </div>
     </div>
-    <nav class="navbar navbar-expand-lg" style="background-color: #ffffff">
+    <nav
+      class="navbar navbar-expand-lg sticky-lg-top"
+      style="background-color: #ffffff"
+    >
       <div class="container">
         <a class="navbar-brand d-block d-lg-none" href="#"
-          ><img src="images/newMetalLogo.png" width="200px" alt="logo"
+          ><img src="images/new.png" width="200px" alt="logo"
         /></a>
         <button
           class="navbar-toggler pull-right"
@@ -36,25 +42,31 @@
         </button>
         <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
           <ul
-            class="navbar-nav mb-2 mb-lg-0 flex-grow-1 justify-content-center nav-fill"
+            class="navbar-nav mb-2 mb-lg-0 flex-grow-1 justify-content-center nav-fill align-items-center"
           >
             <li class="nav-item">
-              <a class="nav-link " href="index.html">Home</a>
+              <a class="nav-link"  href="index.html"
+                >Home</a
+              >
             </li>
             <li class="nav-item">
+              <span class="nav-background"></span>
               <a class="nav-link" href="about.html">About</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#">Products</a>
+              <a class="nav-link active" aria-current="page" href="products.html">Products</a>
             </li>
-            <a class="navbar-brand d-none d-lg-block" href="#"
-              ><img src="images/newMetalLogo.png" width="200px" alt="logo"
+            <a class="brand-large col-lg-3 d-none d-lg-block" href="index.html"
+              ><img
+                src="images/LogoAnimationWhite.gif"
+                width="300px"
+                alt="logo"
             /></a>
             <li class="nav-item">
               <a class="nav-link" href="services.html">Services</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="products.html">Gallery</a>
+              <a class="nav-link" href="gallery.html">Gallery</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="products.html">Links</a>
@@ -65,114 +77,137 @@
     </nav>
     <!-- Main -->
 
-    
+   
         
-    
-    
-          <div class="container">
-            <div class="search-container">
-              <input type="text" id="search-input" placeholder="Search...">
-              <button type="button" id="search-button">Search</button>
-            </div>
-            <div class="filter-container">
-              <select id="filter1">
-                <option value="">All Products</option>
-                <option value="electronics">Electronics</option>
-                <option value="clothing">Clothing</option>
-                <option value="beauty">Beauty</option>
-              </select>
-              <select id="filter2">
-                <option value="">All Prices</option>
-                <option value="10">$10 and under
-              <option value="20">$20 and under</option>
-              <option value="30">$30 and under</option>
-            </select>
-          </div>
-          <div class="row row-cols-1 row-cols-md-2 row-cols-xl-4 py-4" id="product-cards">
-            <div class="product-card" data-category="electronics" data-price="20">
-              <img src="https://via.placeholder.com/300x200.png?text=Product+Image" alt="Product Image">
-              <h3>Product 1</h3>
-              <p>Description of Product 1</p>
-              <button type="button">Add to Cart</button>
-            </div>
-            <div class="product-card" data-category="clothing" data-price="30">
-              <img src="https://via.placeholder.com/300x200.png?text=Product+Image" alt="Product Image">
-              <h3>Product 2</h3>
-              <p>Description of Product 2</p>
-              <button type="button">Add to Cart</button>
-            </div>
-            <div class="product-card" data-category="beauty" data-price="15">
-              <img src="https://via.placeholder.com/300x200.png?text=Product+Image" alt="Product Image">
-              <h3>Product 3</h3>
-              <p>Description of Product 3</p>
-              <button type="button">Add to Cart</button>
-            </div>
-            <!-- Add 9 more product cards -->
-            
-          
-           
-            <div class="product-card" data-category="electronics" data-price="20">
-              <img src="https://via.placeholder.com/300x200.png?text=Product+Image" alt="Product Image">
-              <h3>Product 4</h3>
-              <p>Description of Product 1</p>
-              <button type="button">Add to Cart</button>
-            </div>
-            <div class="product-card" data-category="clothing" data-price="30">
-              <img src="https://via.placeholder.com/300x200.png?text=Product+Image" alt="Product Image">
-              <h3>Product 5</h3>
-              <p>Description of Product 2</p>
-              <button type="button">Add to Cart</button>
-            </div>
-            <div class="product-card" data-category="beauty" data-price="15">
-              <img src="https://via.placeholder.com/300x200.png?text=Product+Image" alt="Product Image">
-              <h3>Product 6</h3>
-              <p>Description of Product 3</p>
-              <button type="button">Add to Cart</button>
-            </div>
-           
-            <div class="product-card" data-category="electronics" data-price="20">
-              <img src="https://via.placeholder.com/300x200.png?text=Product+Image" alt="Product Image">
-              <h3>Product 4</h3>
-              <p>Description of Product 1</p>
-              <button type="button">Add to Cart</button>
-            </div>
-            <div class="product-card" data-category="clothing" data-price="30">
-              <img src="https://via.placeholder.com/300x200.png?text=Product+Image" alt="Product Image">
-              <h3>Product 5</h3>
-              <p>Description of Product 2</p>
-              <button type="button">Add to Cart</button>
-            </div>
-            <div class="product-card" data-category="beauty" data-price="15">
-              <img src="https://via.placeholder.com/300x200.png?text=Product+Image" alt="Product Image">
-              <h3>Product 6</h3>
-              <p>Description of Product 3</p>
-              <button type="button">Add to Cart</button>
-            </div>
+    <!-- ADD CODE HERE -->
+    <div class="container mt-5">
+      
+      <div id="shop-image" class="text-center mt-4 position-relative">
+        <h1 class="shop-text">Enquire About Products</h1>
+      </div>
 
-            <div class="product-card" data-category="electronics" data-price="20">
-              <img src="https://via.placeholder.com/300x200.png?text=Product+Image" alt="Product Image">
-              <h3>Product 4</h3>
-              <p>Description of Product 1</p>
-              <button type="button">Add to Cart</button>
+      <div class="d-flex justify-content-center mt-5 mb-5">
+        <input
+          type="text"
+          id="search-bar"
+          class="form-control"
+          placeholder="Search for products"
+          onkeyup="searchProducts()"
+        />
+        <button class="btn btn-search">
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" viewBox="0 0 24 24">
+            <path d="M10 2C5.58 2 2 5.58 2 10C2 14.42 5.58 18 10 18C12.04 18 13.85 17.04 15.12 15.66L15.66 16.2L20.7 21.24C21.09 21.63 21.75 21.63 22.14 21.24C22.53 20.85 22.53 20.19 22.14 19.8L17.1 14.76L16.56 15.3C17.96 13.85 19 11.99 19 10C19 5.58 15.42 2 10 2M10 4C13.31 4 16 6.69 16 10C16 13.31 13.31 16 10 16C6.69 16 4 13.31 4 10C4 6.69 6.69 4 10 4Z"/>
+          </svg>
+        </button>
+      </div>
+      
+
+    
+
+    
+      <div class="row mt-4" id="product-container">
+        <!-- Example product box -->
+        <div class="col-lg-4 col-md-6 mb-4 product-box" data-keywords="bolt">
+          <div class="card h-100">
+            <img src="images/Bolts.jpg" class="card-img-top" alt="Bolt" />
+            <div class="card-body">
+              <h5 class="card-title">Bolt</h5>
+              <a href="products/productsBolts.html" class="btn btn-primary">View Item</a>
             </div>
-            <div class="product-card" data-category="clothing" data-price="30">
-              <img src="https://via.placeholder.com/300x200.png?text=Product+Image" alt="Product Image">
-              <h3>Product 5</h3>
-              <p>Description of Product 2</p>
-              <button type="button">Add to Cart</button>
-            </div>
-            <div class="product-card" data-category="beauty" data-price="15">
-              <img src="https://via.placeholder.com/300x200.png?text=Product+Image" alt="Product Image">
-              <h3>Product 6</h3>
-              <p>Description of Product 3</p>
-              <button type="button">Add to Cart</button>
-            </div>
-            
-         
-          
+          </div>
         </div>
+
+        <div class="col-lg-4 col-md-6 mb-4 product-box" data-keywords="hinge">
+          <div class="card h-100">
+            <img src="images/hinge.jpg" class="card-img-top" alt="hinge" />
+            <div class="card-body">
+              <h5 class="card-title">Hinge</h5>
+              <a href="products/productsHinges.html" class="btn btn-primary">View Item</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-4 col-md-6 mb-4 product-box" data-keywords="Cleat">
+          <div class="card h-100">
+            <img src="images/cleats.jpg" class="card-img-top" alt="Cleat" />
+            <div class="card-body">
+              <h5 class="card-title">Cleat</h5>
+              <a href="products/productsCleats.html" class="btn btn-primary">View Item</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-4 col-md-6 mb-4 product-box" data-keywords="bolt">
+          <div class="card h-100">
+            <img src="images/Bolts.jpg" class="card-img-top" alt="Bolt" />
+            <div class="card-body">
+              <h5 class="card-title">Bolt</h5>
+              <a href="products/productsBolts.html" class="btn btn-primary">View Item</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-4 col-md-6 mb-4 product-box" data-keywords="hinge">
+          <div class="card h-100">
+            <img src="images/hinge.jpg" class="card-img-top" alt="hinge" />
+            <div class="card-body">
+              <h5 class="card-title">Hinge</h5>
+              <a href="products/productsHinges.html" class="btn btn-primary">View Item</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-4 col-md-6 mb-4 product-box" data-keywords="Cleat">
+          <div class="card h-100">
+            <img src="images/cleats.jpg" class="card-img-top" alt="Cleat" />
+            <div class="card-body">
+              <h5 class="card-title">Cleat</h5>
+              <a href="products/productsCleats.html" class="btn btn-primary">View Item</a>
+            </div>
+          </div>
+        </div>
+
+        
+        <div class="col-lg-4 col-md-6 mb-4 product-box" data-keywords="bolt">
+          <div class="card h-100">
+            <img src="images/Bolts.jpg" class="card-img-top" alt="Bolt" />
+            <div class="card-body">
+              <h5 class="card-title">Bolt</h5>
+              <a href="products/productsBolts.html" class="btn btn-primary">View Item</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-4 col-md-6 mb-4 product-box" data-keywords="hinge">
+          <div class="card h-100">
+            <img src="images/hinge.jpg" class="card-img-top" alt="hinge" />
+            <div class="card-body">
+              <h5 class="card-title">Hinge</h5>
+              <a href="products/productsHinges.html" class="btn btn-primary">View Item</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-4 col-md-6 mb-4 product-box" data-keywords="Cleat">
+          <div class="card h-100">
+            <img src="images/cleats.jpg" class="card-img-top" alt="Cleat" />
+            <div class="card-body">
+              <h5 class="card-title">Cleat</h5>
+              <a href="products/productsCleats.html" class="btn btn-primary">View Item</a>
+            </div>
+          </div>
+        </div>
+
+        
+        <!-- Add more product boxes as needed -->
+      </div>
     </div>
-  
+    
+    
+
+    
+    
+
 
 <script src="scripts/myScripts.js"></script>
 
@@ -180,8 +215,12 @@
     <div class="footer-background">
       <div class="container">
         <div class="row py-4">
-          <div class="col-lg-3 d-none d-lg-block">
-            <img src="images/newMetalLogo.png" alt="logo" class="img-fluid" />
+          <div class="col-lg-3 d-none d-lg-block pt-5">
+            <img
+              src="images/LogoAnimationGrey.gif"
+              alt="logo"
+              class="img-fluid"
+            />
           </div>
           <!-- footer links -->
           <div class="col-lg-3">
