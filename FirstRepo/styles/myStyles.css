@@ -1,3 +1,6 @@
+* {
+  box-sizing: border-box;
+}
 /* header */
 .header-top {
   background-color: #c9c5c7;
@@ -8,13 +11,7 @@
 .metal-background {
   position: absolute;
 }
-/* .navbar-nav .nav-link.active {
-  color: #d62d1b;
-}
-.nav-link:hover {
-  color: #c9c5c7;
-  text-shadow: #d62d1b 0 0 3px;
-} */
+/* https://css-tricks.com/css-link-hover-effects/ */
 .nav-link {
   background: linear-gradient(to right, rgba(255, 255, 255, 0), #d62d1b);
   background-size: 0 3px;
