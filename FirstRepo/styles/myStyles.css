@@ -86,7 +86,7 @@ body {
 .brand-large {
   display: inline-block;
   /* background-color: white; */
-  padding: 0 0 0 30px;
+  padding: 0 300px 0 0;
   /* margin-top: -px; */
 }
 
@@ -97,9 +97,14 @@ body {
 
 .caro-message {
   position: relative;
-  top: -60px;
-  left: -300px;
+  top: -80px;
+  text-shadow: black 2px 1px 5px;
   color: #f2f2f2;
+}
+@media (max-width: 767px) {
+  .fs-2 {
+    font-size: 1.25rem !important;
+  }
 }
 
 .btn-custom {
@@ -203,9 +208,6 @@ body {
 
 /* Products Page */
 
-
-
-
 #search-bar {
   width: 50%;
   max-width: 500px;
@@ -232,7 +234,6 @@ body {
   }
 }
 
-
 .shop-text {
   position: absolute;
   top: 35%;
@@ -256,22 +257,18 @@ body {
   }
 }
 
-
-
 #shop-image {
   background-image: linear-gradient(
       to bottom,
       rgba(255, 255, 255, 0) 50%,
       rgba(255, 255, 255, 1) 90%
     ),
-    url('../images/1.jpeg'); /* update the path to your image */
+    url("../images/1.jpeg"); /* update the path to your image */
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
   height: 50vh;
 }
-
-
 
 .shop-text::after {
   content: "";
@@ -282,9 +279,6 @@ body {
   animation: underline-slide-in 1s forwards;
   animation-delay: 1s;
 }
-
-
-
 
 .product-box h5 {
   text-align: center;
@@ -331,7 +325,6 @@ body {
 /* Products Page-Bolts */
 
 .footer-background {
-
 }
 
 .product-detail-container {
@@ -339,7 +332,6 @@ body {
   justify-content: space-around;
   align-items: center;
   margin-top: 50px;
-  
 }
 
 .product-info {
@@ -369,7 +361,6 @@ body {
   height: auto;
   border: 2px solid #dadada; /* Add a border to the image */
   border-radius: 5px;
- 
 }
 
 .zoomed-image {
@@ -407,8 +398,6 @@ body {
   background-color: rgba(0, 0, 0, 0.4);
 }
 
-
-
 .modal-content {
   background-color: #fefefe;
   margin-top: 100px;
@@ -425,10 +414,6 @@ body {
   transition: transform 0.3s ease-out, opacity 0.3s ease-out;
 }
 
-
-
-
-
 .close {
   color: #aaa;
   float: right;
@@ -443,8 +428,6 @@ body {
   cursor: pointer;
 }
 
-
-
 /* Products Page-Bolts-end */
 
 /* Contact Page */
@@ -452,7 +435,9 @@ body {
 /* Contact Page-end */
 
 /* Services Page */
-
+.ser-red {
+  background-color: #d62e1b7f;
+}
 /* Services Page-end */
 
 /* Gallery Page */
