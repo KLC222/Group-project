@@ -505,16 +505,23 @@ body {
 /* Services Page-end */
 
 /* Gallery Page */
+header {
+  background-image: linear-gradient(to bottom right, #747676, #747676);
+  color: #444141;
+  padding: 4rem;
+  text-align: center;
+}
+
 #Gallery{
-  color:red;
+  color:black;
   font-family:arial;
   text-align:center;
-  font-size: 40pt;
-  font-weight: lighter;
+  font-size: 50pt;
+  font-weight: bold;
 }
 #img-gal{
   height:360px;
-  padding:50px; 
+  padding:30px; 
 }
 
 
