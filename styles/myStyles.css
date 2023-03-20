@@ -215,6 +215,12 @@ body {
   transform: rotateY(0deg);
 }
 
+@media (max-width: 450px) {
+  .image-ani-container {
+    display: none;
+  }
+}
+
 .image-ani-container:hover .image-ani {
   animation-play-state: paused;
 }
