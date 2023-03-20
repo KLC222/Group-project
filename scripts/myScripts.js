@@ -99,6 +99,28 @@ document.addEventListener("DOMContentLoaded", function () {
 //PRODUCTS PAGE SCRIPT END
 
 //PRODUCTS BOLTS PAGE SCRIPT
+btn.onclick = function () {
+  const formContent = document.getElementById("form-content");
+  if (formContent) {
+    formContent.style.transform = "translateY(0%)";
+    formContent.style.opacity = "1";
+  }
+  modal.style.display = "block";
+};
+
+// ...
+
+cancelBtn.onclick = function () {
+  const formContent = document.getElementById("form-content");
+  if (formContent) {
+    formContent.style.transform = "translateY(-100%)";
+    formContent.style.opacity = "0";
+    setTimeout(function () {
+      modal.style.display = "none";
+    }, 300);
+  }
+};
+
 function addImageZoom() {
   const imageWrapper = document.querySelector('.product-image-wrapper');
   const productImage = document.querySelector('.product-image');
