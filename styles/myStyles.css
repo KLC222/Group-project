@@ -506,11 +506,15 @@ body {
 
 /* Gallery Page */
 #Gallery{
-  color:black;
+  color:red;
   font-family:arial;
   text-align:center;
-  font-size: 20pt;
+  font-size: 40pt;
   font-weight: lighter;
+}
+#img-gal{
+  height:360px;
+  padding:50px; 
 }
 
 
