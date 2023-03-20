@@ -489,5 +489,13 @@ body {
 /* Services Page-end */
 
 /* Gallery Page */
+H2{
+  color:black;
+  font-family:arial;
+  text-align:centre;
+  font-size: 20pt;
+  font-weight: lighter;
+}
+
 
 /* Gallery Page-end */
