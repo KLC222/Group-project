@@ -208,10 +208,10 @@ body {
 
 .image-ani {
   position: absolute;
-  left: -200px;
+  left: 100%;
   animation: linear infinite;
   animation-name: run;
-  animation-duration: 8s;
+  animation-duration: 10s;
   transform: rotateY(0deg);
 }
 
@@ -223,15 +223,15 @@ body {
 /* #image-ani-1 {
 } */
 #image-ani-2 {
-  animation-delay: 3s;
+  animation-delay: 4s;
 }
 #image-ani-3 {
-  animation-delay: 5s;
+  animation-delay: 7s;
 }
 
 @keyframes run {
   0% {
-    left: -200px;
+    left: 100%;
     /* opacity: 0; */
   }
   20% {
@@ -241,7 +241,7 @@ body {
     opacity: 1;
   }
   100% {
-    left: 100%;
+    left: -200px;
     opacity: 0;
   }
 }
