@@ -505,10 +505,10 @@ body {
 /* Services Page-end */
 
 /* Gallery Page */
-H2{
+#Gallery{
   color:black;
   font-family:arial;
-  text-align:centre;
+  text-align:center;
   font-size: 20pt;
   font-weight: lighter;
 }
