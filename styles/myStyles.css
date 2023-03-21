@@ -529,6 +529,44 @@ header {
   height:360px;
   padding:30px; 
 }
+#Doors{
+ 
+  color: #444141;
+  padding: 4rem;
+  text-align:center;
+  font-size: 50pt;
+  font-weight: bold;
+  height: 50px;
+  
+ 
 
-
+}
+#Sheds{
+  color: #444141;
+  padding: 4rem;
+  text-align:center;
+  font-size: 50pt;
+  font-weight: bold;
+  height: 50px; 
+  box-sizing: border-box;
+}
+#Trailers{
+  color: #444141;
+  padding: 4rem;
+  text-align:center;
+  font-size: 50pt;
+  font-weight: bold;
+  height: 50px;
+  box-sizing: border-box;
+}
+#Random{
+ 
+  color: #444141;
+  padding: 4rem;
+  text-align:center;
+  font-size: 50pt;
+  font-weight: bold;
+  height: 50px;
+  box-sizing: border-box;
+}
 /* Gallery Page-end */
