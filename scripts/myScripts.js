@@ -99,77 +99,36 @@ document.addEventListener("DOMContentLoaded", function () {
 //PRODUCTS PAGE SCRIPT END
 
 //PRODUCTS BOLTS PAGE SCRIPT
-btn.onclick = function () {
-  const formContent = document.getElementById("form-content");
-  if (formContent) {
-    formContent.style.transform = "translateY(0%)";
-    formContent.style.opacity = "1";
-  }
-  modal.style.display = "block";
-};
+const imageContainer = document.querySelector('.image-container');
+const originalImage = imageContainer.querySelector('img');
 
-// ...
+imageContainer.addEventListener('mousemove', (event) => {
+  const containerRect = imageContainer.getBoundingClientRect();
+  const x = event.clientX - containerRect.left;
+  const y = event.clientY - containerRect.top;
 
-cancelBtn.onclick = function () {
-  const formContent = document.getElementById("form-content");
-  if (formContent) {
-    formContent.style.transform = "translateY(-100%)";
-    formContent.style.opacity = "0";
-    setTimeout(function () {
-      modal.style.display = "none";
-    }, 300);
-  }
-};
+  const offsetX = ((x / containerRect.width) * 200) - 100;
+  const offsetY = ((y / containerRect.height) * 200) - 100;
 
-function addImageZoom() {
-  const imageWrapper = document.querySelector('.product-image-wrapper');
-  const productImage = document.querySelector('.product-image');
+  originalImage.style.transform = `scale(2) translate(-${offsetX}%, -${offsetY}%)`;
+});
 
-  if (!imageWrapper || !productImage) {
-    return;
-  }
-
-  imageWrapper.addEventListener('mousemove', (e) => {
-    const rect = imageWrapper.getBoundingClientRect();
-    const x = e.clientX - rect.left;
-    const y = e.clientY - rect.top;
-
-    const zoomLevel = 2;
-    const offsetX = -Math.round((x / rect.width) * (zoomLevel - 1) * 100);
-    const offsetY = -Math.round((y / rect.height) * (zoomLevel - 1) * 100);
-    productImage.style.transformOrigin = `${x}px ${y}px`;
-    productImage.style.transform = `scale(${zoomLevel})`;
-  });
-
-  imageWrapper.addEventListener('mouseleave', () => {
-    productImage.style.transform = '';
-  });
-}
-
-document.addEventListener('DOMContentLoaded', function () {
-  // Add the following line inside the DOMContentLoaded event handler:
-  addImageZoom();
-
-  // ... (your existing code)
+imageContainer.addEventListener('mouseleave', () => {
+  originalImage.style.transform = '';
 });
 
 
-document.addEventListener('DOMContentLoaded', function () {
-  // ... (your existing code)
 
-  // Add this part to handle the Cancel button click
-  const cancelBtn = document.getElementById('cancel-btn');
-  if (cancelBtn) {
-    cancelBtn.onclick = function () {
-      document.querySelector(".form-content").style.transform = "translateY(-100%)";
-      document.querySelector(".form-content").style.opacity = "0";
-      setTimeout(function () {
-        popupForm.style.display = "none";
-      }, 300);
-    };
-  }
-});
+const enquiryButton = document.querySelector('.enquire-button');
+  const cancelButton = document.getElementById('cancelButton');
+  const enquiryForm = document.getElementById('enquiryForm');
 
+  enquiryButton.addEventListener('click', () => {
+    enquiryForm.classList.add('visible');
+  });
 
+  cancelButton.addEventListener('click', () => {
+    enquiryForm.classList.remove('visible');
+  });
 
 //PRODUCTS BOLTS PAGE END

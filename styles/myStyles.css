@@ -343,7 +343,7 @@ body {
   margin: 10px auto;
   width: 50%;
   max-width: 300px;
-  background-color: #333333;
+  background-color: #f03636;
   border-color: red;
 }
 
@@ -375,6 +375,119 @@ body {
 }
 
 /* Products Page-end */
+
+
+.container-b {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  padding: 50px;
+}
+
+.product-info {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.product-title {
+  font-size: 32px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.product-description {
+  font-size: 18px;
+  margin-bottom: 20px;
+}
+
+.enquire-button {
+  background-color: rgb(253, 51, 0);
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 3px;
+}
+
+.product-image {
+  width: 50%;
+}
+
+.product-image img {
+  max-width: 100%;
+  height: auto;
+}
+
+.related-products {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-top: 50px;
+}
+
+.cardb {
+  background-color: #f1f1f1;
+  width: 300px;
+  margin: 20px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  transition: 0.3s;
+}
+
+.cardb:hover {
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+
+.cardb img {
+  width: 100%;
+  height: auto;
+}
+
+.card-title {
+  font-size: 24px;
+  font-weight: bold;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.enquiry-form {
+  display: none;
+  margin-top: 20px;
+  opacity: 0;
+  transition: opacity 0.5s;
+}
+
+.enquiry-form form {
+  display: flex;
+  flex-direction: column;
+}
+
+.enquiry-form label,
+.enquiry-form input,
+.enquiry-form textarea {
+  margin-bottom: 10px;
+}
+
+.enquiry-form button {
+  margin-right: 10px;
+}
+
+/* Add this CSS rule to make the form visible with a transition */
+.enquiry-form.visible {
+  display: flex;
+  opacity: 1;
+}
+
 
 /* Products Page-Bolts */
 
