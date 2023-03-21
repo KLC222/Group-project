@@ -118,17 +118,17 @@ imageContainer.addEventListener('mouseleave', () => {
 });
 
 
-
 const enquiryButton = document.querySelector('.enquire-button');
-  const cancelButton = document.getElementById('cancelButton');
-  const enquiryForm = document.getElementById('enquiryForm');
+const cancelButton = document.getElementById('cancelButton');
+const enquiryForm = document.getElementById('enquiryForm');
+const modalBackdrop = document.getElementById('modalBackdrop');
 
-  enquiryButton.addEventListener('click', () => {
-    enquiryForm.classList.add('visible');
-  });
+enquiryButton.addEventListener('click', () => {
+  modalBackdrop.classList.add('visible');
+});
 
-  cancelButton.addEventListener('click', () => {
-    enquiryForm.classList.remove('visible');
-  });
+cancelButton.addEventListener('click', () => {
+  modalBackdrop.classList.remove('visible');
+});
 
 //PRODUCTS BOLTS PAGE END
