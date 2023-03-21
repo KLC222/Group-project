@@ -76,41 +76,28 @@
     </nav>
 
 <!-- ENTER CODE HERE -->
-<div class="content-wrapper">
-  <div class="product-info">
-    <h1 class="product-title">Product Name</h1>
-    <p class="product-description">Product description goes here...</p>
-    <button class="show-popup-form">Order Now</button>
+<div class="container">
+  <div class="content">
+      <h1 class="product-title">Product Title</h1>
+      <p class="product-description">This is a description of the product. It contains information about the product's features and benefits.</p>
+      <div class="buttons">
+          <button id="enquire-button">Enquire</button>
+          <button id="other-button">Other Button</button>
+      </div>
+      <div id="enquiry-form" class="hidden">
+          <form>
+              <input type="text" placeholder="Name" required>
+              <input type="email" placeholder="Email" required>
+              <input type="tel" placeholder="Phone">
+              <textarea placeholder="Message"></textarea>
+              <button type="submit">Submit</button>
+          </form>
+      </div>
   </div>
-  <div class="product-image-wrapper">
-    <img class="product-image" src="../images/Bolts.jpg" alt="Product Image">
+  <div class="image-container">
+      <img id="product-image" src="product-image.jpg" alt="Product Image">
   </div>
-</div>
-
-<div class="popup-form" id="popup-form">
-  <form class="form-content" id="form-content">
-    <form class="form-content">
-
-      <h2>Contact Us</h2>
-      <label for="name">Name:</label>
-      <input type="text" id="name" name="name" placeholder="Your name" required>
-      
-      <label for="email">Email:</label>
-      <input type="email" id="email" name="email" placeholder="Your email" required>
-      
-      <label for="phone">Phone:</label>
-      <input type="tel" id="phone" name="phone" placeholder="Your phone number" required>
-      
-      <label for="message">Message:</label>
-      <textarea id="message" name="message" placeholder="Your message" rows="4" required></textarea>
-      
-      <button type="submit" class="submit-btn">Submit</button>
-      <button type="button" class="cancel-btn" id="cancel-btn">Cancel</button>
-    </form>
-  </div>
-  
-</div>
-          
+</div>   
 
 <script src="../scripts/myScripts.js"></script>
 
