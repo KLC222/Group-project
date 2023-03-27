@@ -1,63 +1,203 @@
 <!DOCTYPE html>
-<html>
-<head>
-<title>Winery: Your Shopping Cart</title>
-<meta charset="utf-8" />
-<link rel="stylesheet" href="styles/style.css" media="screen" type="text/css" />
-<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
-<script type="text/javascript" src="scripts/jquery.shop.js"></script>
-</head>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Creaven Engineering</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD"
+      crossorigin="anonymous"
+    />
+    <link href="styles/myStyles.css" rel="stylesheet" />
+    <link
+      rel="stylesheet"
+      href="styles/style.css"
+      media="screen"
+      type="text/css"
+    />
+    <script
+      type="text/javascript"
+      src="https://ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"
+    ></script>
+    <script type="text/javascript" src="scripts/jquery.shop.js"></script>
+  </head>
+  <body>
+    <!-- header -->
+    <div class="brand-container"></div>
+    <div class="header-top">
+      <div class="container text-end pt-3">
+        <p id="header-top-phone">
+          <a href="https://www.facebook.com/creavenengineering/"
+            ><i class="bi-facebook"></i
+          ></a>
+          |
+          <a href="tel:0877890136"
+            ><i class="bi-telephone-fill"></i> 087 789 0136</a
+          >
+        </p>
+      </div>
+    </div>
+    <nav
+      class="navbar navbar-expand-lg sticky-lg-top"
+      style="background-color: #ffffff"
+    >
+      <div class="container">
+        <a class="navbar-brand d-block d-lg-none" href="index.html"
+          ><img src="images/LogoAnimationWhite.gif" width="200px" alt="logo"
+        /></a>
+        <button
+          class="navbar-toggler pull-right"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarTogglerDemo01"
+          aria-controls="navbarTogglerDemo01"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+          <ul
+            class="navbar-nav mb-2 mb-lg-0 flex-grow-1 justify-content-center nav-fill align-items-center"
+          >
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="index.html"
+                >Home</a
+              >
+            </li>
+            <li class="nav-item">
+              <span class="nav-background"></span>
+              <a class="nav-link" href="about.html">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="products.html">Products</a>
+            </li>
+            <a class="brand-large col-lg-3 d-none d-lg-block" href="index.html"
+              ><img
+                src="images/LogoAnimationWhite.gif"
+                width="400px"
+                alt="logo"
+            /></a>
+            <li class="nav-item">
+              <a class="nav-link" href="services.html">Services</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="gallery.html">Gallery</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="products.html">Links</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!-- header end -->
+    <div id="container">
+      <div id="site">
+        <div id="content">
+          <h1>Your Shopping Cart</h1>
+          <form id="shopping-cart" action="cart.html" method="get">
+            <table class="shopping-cart">
+              <thead>
+                <tr>
+                  <th scope="col">Item</th>
+                  <th scope="col">Qty</th>
+                  <th scope="col" colspan="2">Price</th>
+                </tr>
+              </thead>
+              <tbody></tbody>
+            </table>
+            <p id="sub-total">
+              <strong>Sub Total</strong>: <span id="stotal"></span>
+            </p>
+            <ul id="shopping-cart-actions">
+              <li>
+                <input
+                  type="submit"
+                  name="update"
+                  id="update-cart"
+                  class="btn"
+                  value="Update Cart"
+                />
+              </li>
+              <li>
+                <input
+                  type="submit"
+                  name="delete"
+                  id="empty-cart"
+                  class="btn"
+                  value="Empty Cart"
+                />
+              </li>
+              <li>
+                <a href="index.html" class="btn">Continue Shopping</a>
 
-<body>
-
-<div id="site">
-	<header id="masthead">
-		<h1>Winery <span class="tagline">Wines for web developers since 1999</h1>
-	</header>
-	<div id="content">
-		<h1>Your Shopping Cart</h1>
-		<form id="shopping-cart" action="cart.html" method="get">
-			<table class="shopping-cart">
-			  <thead>
-				<tr>
-					<th scope="col">Item</th>
-					<th scope="col">Qty</th>
-					<th scope="col" colspan="2">Price</th>
-				</tr>
-			  </thead>
-			  <tbody>
-			  
-			  </tbody>
-			</table>
-			<p id="sub-total">
-				<strong>Sub Total</strong>: <span id="stotal"></span>
-			</p>
-			<ul id="shopping-cart-actions">
-				<li>
-					<input type="submit" name="update" id="update-cart" class="btn" value="Update Cart" />
-				</li>
-				<li>
-					<input type="submit" name="delete" id="empty-cart" class="btn" value="Empty Cart" />
-				</li>
-				<li>
-					<a href="index.html" class="btn">Continue Shopping</a>
-					<--! Uncomment next line to integrate shopping cart -->
-					<--! <a href="shop.html" class="btn">Continue Shopping</a> -->
-				</li>
-				<li>
-					<a href="checkout.html" class="btn">Go To Checkout</a>
-				</li>
-			</ul>
-		</form>
-	</div>
-	
-	
-
-</div>
-
-<footer id="site-info">
-		Copyright &copy; Winery
-	</footer>
-
-</body>
-</html>	
+                <a href="shop.html" class="btn">Continue Shopping</a>
+              </li>
+              <li>
+                <a href="checkout.html" class="btn">Go To Checkout</a>
+              </li>
+            </ul>
+          </form>
+        </div>
+      </div>
+      <!-- Footer below -->
+      <div class="footer-background">
+        <div class="container">
+          <div class="row py-4">
+            <div class="col-lg-3 d-none d-lg-block pt-5">
+              <img
+                src="images/LogoAnimationGrey.gif"
+                alt="logo"
+                class="img-fluid"
+              />
+            </div>
+            <!-- footer links -->
+            <div class="col-lg-3">
+              <div class="row">
+                <div class="col d-flex flex-column footerLinks">
+                  <h4>Website</h4>
+                  <a href="index.html">Home</a>
+                  <a href="about.html">About</a>
+                  <a href="products.html">Products</a>
+                  <a href="services.html">Services</a>
+                  <a href="gallery.html">Gallery</a>
+                  <a href="contact.html">Contact</a>
+                  <a href="links.html">Links</a>
+                </div>
+                <div class="col d-flex flex-column">
+                  <h4>Services</h4>
+                  <div>Custom fabrication</div>
+                  <div>Welding repairs</div>
+                  <div>Garden sheds</div>
+                  <div>Doors</div>
+                  <div>Frames</div>
+                  <div>Steel cutting-drilling</div>
+                  <div>Mobile welding</div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-6 text-center">
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d9499.776006142389!2d-9.114910210179163!3d53.469460878508876!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x485bebe739cba97b%3A0xa00c7a99731d270!2sHeadford%2C%20Co.%20Galway!5e0!3m2!1sen!2sie!4v1677683049701!5m2!1sen!2sie"
+                width="300"
+                height="225"
+                style="border: 0"
+                allowfullscreen=""
+                loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"
+              ></iframe>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
