@@ -11,26 +11,17 @@ html, body {
 	min-height: 100%;
 }
 
-body {
-	font: 100%/1 'PT Serif', serif;
-	background: #fff;
-	color: #333;
-	border-top: 0.5em solid #cc8500;	
-}
+
+
+
 
 :active, :focus {
 	outline-style: none;
 }
 
-a:link {
-	color: #cc8500;
-	text-decoration: none;
-}
 
-a:hover {
-	color: #cc1400;
-	text-decoration: underline;
-}
+
+
 
 h1, h2, h3, h4, h5, h6 {
 	font-weight: normal;
@@ -99,16 +90,7 @@ h1, h2, h3, h4, h5, h6 {
 	border-radius: 5px;
 }
 
-.product-name {
-	text-align: center;
-	color: #fc0;
-	margin: 0;
-	font-size: 1.4em;
-	padding-bottom: 0.2em;
-	border-bottom: 1px dotted #666;
-	text-transform: uppercase;
-	letter-spacing: 0.1em;
-}
+
 
 .product-price {
 	width: 4em;
@@ -148,18 +130,6 @@ form input.qty {
 	border: 1px solid #a00;
 }
 
-
-#site-info {
-	height: 3em;
-	width: 100%;
-	line-height: 3;
-	text-align: center;
-	background: #cc8500;
-	position: absolute;
-	color: #fff;
-	left: 0;
-	bottom: 0;
-}
 
 body#checkout-page #site-info {
 	position: static;

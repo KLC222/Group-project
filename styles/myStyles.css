@@ -377,52 +377,125 @@ body {
 /* Products Page-end */
 
 
-.container-b {
+
+.content-wrapper {
   display: flex;
+ 
   justify-content: center;
   align-items: center;
-  flex-direction: row;
-  padding: 50px;
+height: 50vh;
 }
 
 .product-info {
-  width: 50%;
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
+margin-right: 50px;
 }
+
 
 .product-title {
-  font-size: 32px;
-  font-weight: bold;
-  margin-bottom: 10px;
-}
-
-.product-description {
-  font-size: 18px;
   margin-bottom: 20px;
 }
 
-.enquire-button {
-  background-color: rgb(253, 51, 0);
-  border: none;
+.show-popup-form {
+  background-color: #007BFF;
   color: white;
-  padding: 15px 32px;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  font-size: 16px;
-  cursor: pointer;
-  border-radius: 3px;
+  padding: 10px 20px;
+cursor: pointer;
+border: none;
+border-radius: 5px;
+}
+
+.product-image-wrapper {
+  position: relative;
+width: 400px;
+height: 400px;
+overflow: hidden;
+border: 0;
 }
 
 .product-image {
-  width: 50%;
+width: 100%;
+height: 100%;
+object-fit: cover;
+transition: transform 0.25s ease;
 }
 
-.product-image img {
-  max-width: 100%;
-  height: auto;
+.popup-form {
+position: relative;
+left: 0;
+bottom: 0;
+width: 100%;
+height: 50%;
+
+z-index: 1000;
+/* Add other styling as needed for the form */
+}
+
+.form-content {
+  display: flex;
+  flex-direction: column;
+  max-width: 400px;
+  margin: 20px auto;
+  padding: 20px;
+background-color: white;
+border-radius: 5px;
+box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+.form-content h2 {
+  margin-bottom: 20px;
+}
+
+.form-content label {
+  margin-top: 10px;
+}
+
+.form-content input,
+.form-content textarea {
+  padding: 8px 12px;
+  margin-top: 5px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 14px;
+}
+
+.form-content textarea {
+  resize: none;
+}
+
+.submit-btn,
+.cancel-btn {
+  padding: 10px 20px;
+  font-size: 16px;
+  margin-top: 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+
+.submit-btn {
+  background-color: #007BFF;
+  color: white;
+}
+
+.cancel-btn {
+  background-color: #ccc;
+  color: black;
+}
+
+/* Adjust the close button position to top right corner */
+.popup-form .cancel-btn {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+}
+
+
+.cancel-btn-container {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  z-index: 10;
 }
 
 .related-products {

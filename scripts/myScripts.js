@@ -99,22 +99,45 @@ document.addEventListener("DOMContentLoaded", function () {
 //PRODUCTS PAGE SCRIPT END
 
 //PRODUCTS BOLTS PAGE SCRIPT
-const imageContainer = document.querySelector('.image-container');
-const originalImage = imageContainer.querySelector('img');
 
-imageContainer.addEventListener('mousemove', (event) => {
-  const containerRect = imageContainer.getBoundingClientRect();
-  const x = event.clientX - containerRect.left;
-  const y = event.clientY - containerRect.top;
+function addImageZoom() {
+  const imageWrapper = document.querySelector('.product-image-wrapper');
+  const productImage = document.querySelector('.product-image');
 
-  const offsetX = ((x / containerRect.width) * 200) - 100;
-  const offsetY = ((y / containerRect.height) * 200) - 100;
+  if (!imageWrapper || !productImage) {
+    return;
+  }
 
-  originalImage.style.transform = `scale(2) translate(-${offsetX}%, -${offsetY}%)`;
+  imageWrapper.addEventListener('mousemove', (e) => {
+    const rect = imageWrapper.getBoundingClientRect();
+    const x = e.clientX - rect.left;
+    const y = e.clientY - rect.top;
+
+    const zoomLevel = 2;
+    const offsetX = -Math.round((x / rect.width) * (zoomLevel - 1) * 100);
+    const offsetY = -Math.round((y / rect.height) * (zoomLevel - 1) * 100);
+    productImage.style.transformOrigin = `${x}px ${y}px`;
+    productImage.style.transform = `scale(${zoomLevel})`;
+  });
+
+  imageWrapper.addEventListener('mouseleave', () => {
+    productImage.style.transform = '';
+  });
+}
+
+document.addEventListener('DOMContentLoaded', function () {
+  // Add the following line inside the DOMContentLoaded event handler:
+  addImageZoom();
+
+  // ... (your existing code)
 });
 
-imageContainer.addEventListener('mouseleave', () => {
-  originalImage.style.transform = '';
+document.querySelector('.show-popup-form').addEventListener('click', function() {
+  document.getElementById('popup-form').classList.remove('hidden');
+});
+
+document.getElementById('cancel-btn').addEventListener('click', function() {
+  document.getElementById('popup-form').classList.add('hidden');
 });
 
 
