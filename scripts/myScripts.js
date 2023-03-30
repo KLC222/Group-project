@@ -132,14 +132,15 @@ document.addEventListener('DOMContentLoaded', function () {
   // ... (your existing code)
 });
 
-document.getElementById('enquire-btn').addEventListener('click', function() {
+document.getElementById('enquire-btn').addEventListener('click', function () {
   var modal = document.getElementById('modal');
   modal.classList.add('modal-show');
+  modal.classList.add('modal-slide'); // Add the slide-down effect
 });
 
-document.getElementById('cancel-btn').addEventListener('click', function() {
+document.getElementById('cancel-btn').addEventListener('click', function () {
   var modal = document.getElementById('modal');
   modal.classList.remove('modal-show');
+  modal.classList.remove('modal-slide'); // Remove the slide-down effect
 });
-
 //PRODUCTS BOLTS PAGE END
