@@ -497,25 +497,82 @@ transition: transform 0.25s ease;
   margin-bottom: 10px;
 }
 
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.content-wrapper {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.product-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.enquire-btn,
+.buy-btn {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  margin-bottom: 10px;
+}
+
+.enquire-btn {
+  background-color: #1e90ff;
+  color: #fff;
+}
+
+.buy-btn {
+  background-color: #32cd32;
+  color: #fff;
+}
+
+.product-image-wrapper {
+  display: flex;
+  justify-content: center;
+}
+
+.related-products {
+  display: flex;
+  justify-content: space-between;
+}
+
 .modal {
   display: none;
   position: fixed;
-  z-index: 1;
-  left: 0;
-  top: 0;
+  z-index: 9000;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
   width: 100%;
   height: 100%;
   overflow: auto;
   background-color: rgba(0, 0, 0, 0.4);
+  opacity: 0;
+  transition: opacity 0.5s;
+}
+
+.modal-show {
+  display: block;
+  opacity: 1;
 }
 
 .modal-content {
   background-color: #fff;
-  margin: 15% auto;
+  margin: 0 auto;
+  margin-top: 100px;
   padding: 20px;
   border: 1px solid #888;
   width: 50%;
+  max-width: 400px; /* Make the form more compact */
   border-radius: 5px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.1);
 }
 
 .modal-header {

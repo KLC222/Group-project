@@ -81,34 +81,58 @@
     <div class="product-info">
       <h1 class="product-title">Iron Bolts</h1>
       <p class="product-description">Iron bolts perfect for all your needs.</p>
-      <button class="enquire-btn">Enquire</button>
+      <button id="enquire-btn" class="enquire-btn">Enquire</button>
       <button class="buy-btn">Buy</button>
     </div>
-  <div class="product-image-wrapper">
-    <img class="product-image" src="../images/Bolts.jpg" alt="Product Image">
+    <div class="product-image-wrapper">
+      <img class="product-image" src="../images/Bolts.jpg" alt="Product Image">
+    </div>
   </div>
-  </div>
- 
 
-<div class="related-products">
-  <div class="cardb">
+  <div class="related-products">
+    <div class="cardb">
       <img src="../images/Bolts.jpg" alt="Related Product 1">
       <div class="card-title">Related Product 1</div>
-  </div>
-  <div class="cardb">
+    </div>
+    <div class="cardb">
       <img src="../images/Bolts.jpg" alt="Related Product 2">
       <div class="card-title">Related Product 2</div>
     </div>
     <div class="cardb">
-        <img src="../images/Bolts.jpg" alt="Related Product 3">
-        <div class="card-title">Related Product 3</div>
+      <img src="../images/Bolts.jpg" alt="Related Product 3">
+      <div class="card-title">Related Product 3</div>
     </div>
+  </div>
 </div>
 
-
-
-
+<div id="modal" class="modal">
+  <div class="modal-content">
+    <div class="modal-header">Enquiry Form</div>
+    <form class="modal-form">
+      <div class="form-control">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required>
+      </div>
+      <div class="form-control">
+        <label for="phone">Phone:</label>
+        <input type="tel" id="phone" name="phone" required>
+      </div>
+      <div class="form-control">
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+      </div>
+      <div class="form-control">
+        <label for="message">Message:</label>
+        <textarea id="message" name="message" rows="5" required></textarea>
+      </div>
+      <div class="modal-footer">
+        <button type="submit" class="submit-btn">Submit</button>
+        <button type="button" id="cancel-btn" class="cancel-btn">Cancel</button>
+      </div>
+    </form>
+  </div>
 </div>
+
 
 
 <script src="../scripts/myScripts.js"></script>

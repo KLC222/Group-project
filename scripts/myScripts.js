@@ -132,26 +132,14 @@ document.addEventListener('DOMContentLoaded', function () {
   // ... (your existing code)
 });
 
-document.querySelector('.show-popup-form').addEventListener('click', function() {
-  document.getElementById('popup-form').classList.remove('hidden');
+document.getElementById('enquire-btn').addEventListener('click', function() {
+  var modal = document.getElementById('modal');
+  modal.classList.add('modal-show');
 });
 
 document.getElementById('cancel-btn').addEventListener('click', function() {
-  document.getElementById('popup-form').classList.add('hidden');
-});
-
-
-const enquiryButton = document.querySelector('.enquire-button');
-const cancelButton = document.getElementById('cancelButton');
-const enquiryForm = document.getElementById('enquiryForm');
-const modalBackdrop = document.getElementById('modalBackdrop');
-
-enquiryButton.addEventListener('click', () => {
-  modalBackdrop.classList.add('visible');
-});
-
-cancelButton.addEventListener('click', () => {
-  modalBackdrop.classList.remove('visible');
+  var modal = document.getElementById('modal');
+  modal.classList.remove('modal-show');
 });
 
 //PRODUCTS BOLTS PAGE END
