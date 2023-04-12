@@ -132,32 +132,44 @@ document.addEventListener('DOMContentLoaded', function () {
   // ... (your existing code)
 });
 
-document.querySelectorAll(".enquire-btn").forEach((button) => {
-  button.addEventListener("click", () => {
-    const modal = document.querySelector(".modal");
-    const modalBg = document.querySelector(".modal-bg");
 
-    modal.classList.toggle("modal-hide");
-    modalBg.classList.toggle("modal-hide");
+
+function handleForm() {
+  document.querySelector('.enquire-btn').addEventListener('click', () => {
+    const formContainer = document.querySelector('.form-container');
+    formContainer.classList.remove('hidden');
+    formContainer.style.opacity = '0';
+    setTimeout(() => {
+      formContainer.style.opacity = '1';
+    }, 50);
   });
+
+  document.querySelector('.cancel-btn').addEventListener('click', () => {
+    const formContainer = document.querySelector('.form-container');
+    formContainer.style.opacity = '0';
+    setTimeout(() => {
+      formContainer.classList.add('hidden');
+    }, 300);
+  });
+
+  document.querySelector('.enquiry-form').addEventListener('submit', (event) => {
+    event.preventDefault();
+
+    // Handle form submission logic here, e.g. sending data to a server
+
+    const formContainer = document.querySelector('.form-container');
+    formContainer.style.opacity = '0';
+    setTimeout(() => {
+      formContainer.classList.add('hidden');
+    }, 300);
+  });
+}
+
+document.addEventListener('DOMContentLoaded', function () {
+  // Add the following line inside the DOMContentLoaded event handler:
+  handleForm();
+
+  // ... (your existing code)
 });
-
-document.querySelector(".cancel-btn").addEventListener("click", () => {
-  const modal = document.querySelector(".modal");
-  const modalBg = document.querySelector(".modal-bg");
-
-  modal.classList.toggle("modal-hide");
-  modalBg.classList.toggle("modal-hide");
-});
-
-document.querySelector(".modal-bg").addEventListener("click", () => {
-  const modal = document.querySelector(".modal");
-  const modalBg = document.querySelector(".modal-bg");
-
-  modal.classList.toggle("modal-hide");
-  modalBg.classList.toggle("modal-hide");
-});
-
-
 
 //PRODUCTS BOLTS PAGE END

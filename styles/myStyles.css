@@ -520,12 +520,12 @@ transition: transform 0.25s ease;
 }
 
 .enquire-btn {
-  background-color: #1e90ff;
+  background-color: #d62d1b;
   color: #fff;
 }
 
 .buy-btn {
-  background-color: #32cd32;
+  background-color: #cccccc;
   color: #fff;
 }
 
@@ -545,11 +545,16 @@ transition: transform 0.25s ease;
 
 
 
-.modal-slide {
-  animation: slide-down 0.5s ease-out forwards;
+.enquire-btn {
+  background-color: #d62d1b;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  cursor: pointer;
 }
 
-.modal {
+.form-container {
   position: fixed;
   top: 0;
   left: 0;
@@ -558,82 +563,76 @@ transition: transform 0.25s ease;
   display: flex;
   justify-content: center;
   align-items: center;
-  z-index: 9999;
-  opacity: 0;
-}
-
-.modal-bg {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
   background-color: rgba(0, 0, 0, 0.5);
-  z-index: -1;
-  opacity: 0;
-  transition: opacity 0.5s ease-out;
+  transition: opacity 0.3s;
+  z-index: 9999;
 }
 
-.modal-bg-show {
-  opacity: 1;
+.enquiry-form {
+  background-color: #f8f9fa;
+  border-radius: 5px;
+  padding: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  width: 400px; /* Made the form wider */
 }
 
-.modal-bg-hide {
-  opacity: 0;
+.enquiry-form h1 {
+  margin-top: 0;
+  margin-bottom: 15px;
 }
 
-.modal-hide {
-  display: none;
-}
-
-.modal-show {
-  transform: translate(-50%, -50%) scale(1);
-  opacity: 1;
-}
-
-.modal-form {
-  background-color: #fff;
-  padding: 2rem;
-  border-radius: 8px;
+.enquiry-form label,
+.enquiry-form input,
+.enquiry-form textarea {
+  display: block;
   width: 100%;
-  max-width: 500px;
+  margin-bottom: 10px;
 }
 
-.modal-header {
-  font-weight: bold;
-  font-size: 1.2rem;
-  margin-bottom: 1rem;
+.enquiry-form textarea {
+  height: 100px;
+  resize: none;
 }
 
-.form-control {
-  display: flex;
-  flex-direction: column;
-  margin-bottom: 1rem;
-}
-
-.modal-footer {
-  display: flex;
-  justify-content: flex-end;
-}
-
-.submit-btn,
-.cancel-btn {
-  padding: 0.5rem 1rem;
-  border: none;
-  background-color: #007bff;
-  color: #fff;
+.enquiry-form button {
+  margin-top: 10px;
+  border-radius: 3px; /* Added slightly rounded borders */
+  width: 48%; /* Evenly spaced buttons */
+  padding: 8px 0;
   cursor: pointer;
-  margin-left: 0.5rem;
-  border-radius: 4px;
 }
 
-.cancel-btn {
-  background-color: #ccc;
+.enquiry-form button[type="submit"] {
+  background-color: #007bff;
+  color: white;
+  border: none;
 }
 
-.submit-btn:hover,
-.cancel-btn:hover {
-  opacity: 0.8;
+.enquiry-form button[type="submit"]:hover {
+  background-color: #0056b3;
+}
+
+.enquiry-form button[type="submit"]:active {
+  background-color: #004085;
+}
+
+.enquiry-form button[type="button"] {
+  background-color: #dc3545;
+  color: white;
+  border: none;
+}
+
+.enquiry-form button[type="button"]:hover {
+  background-color: #c82333;
+}
+
+.enquiry-form button[type="button"]:active {
+  background-color: #bd2130;
+}
+
+.hidden {
+  opacity: 0;
+  pointer-events: none;
 }
 
 
