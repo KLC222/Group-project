@@ -376,50 +376,45 @@ body {
 
 /* Products Page-end */
 
-
-
 .content-wrapper {
   display: flex;
- 
+
   justify-content: center;
   align-items: center;
-height: 50vh;
+  height: 50vh;
 }
 
 .product-info {
-margin-right: 50px;
+  margin-right: 50px;
 }
-
 
 .product-title {
   margin-bottom: 20px;
 }
 
 .show-popup-form {
-  background-color: #007BFF;
+  background-color: #007bff;
   color: white;
   padding: 10px 20px;
-cursor: pointer;
-border: none;
-border-radius: 5px;
+  cursor: pointer;
+  border: none;
+  border-radius: 5px;
 }
 
 .product-image-wrapper {
   position: relative;
-width: 400px;
-height: 400px;
-overflow: hidden;
-border: 0;
+  width: 400px;
+  height: 400px;
+  overflow: hidden;
+  border: 0;
 }
 
 .product-image {
-width: 100%;
-height: 100%;
-object-fit: cover;
-transition: transform 0.25s ease;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.25s ease;
 }
-
-
 
 .content-wrapper {
   display: flex;
@@ -477,12 +472,12 @@ transition: transform 0.25s ease;
   display: flex;
   flex-direction: column;
   align-items: center;
-  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
   transition: 0.3s;
 }
 
 .cardb:hover {
-  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
 }
 
 .cardb img {
@@ -496,7 +491,6 @@ transition: transform 0.25s ease;
   margin-top: 10px;
   margin-bottom: 10px;
 }
-
 
 .content-wrapper {
   display: flex;
@@ -542,8 +536,6 @@ transition: transform 0.25s ease;
 .related-products-heading {
   margin-top: 200px; /* Updated margin to push related products down */
 }
-
-
 
 .modal-slide {
   animation: slide-down 0.5s ease-out forwards;
@@ -636,7 +628,6 @@ transition: transform 0.25s ease;
   opacity: 0.8;
 }
 
-
 @keyframes slide-down {
   0% {
     opacity: 0;
@@ -650,8 +641,6 @@ transition: transform 0.25s ease;
 
 /* Products Page-Bolts */
 
-
-
 /* Products Page-Bolts-end */
 
 /* Contact Page */
@@ -664,7 +653,35 @@ transition: transform 0.25s ease;
   background-image: linear-gradient(30deg, grey 50%, red 50%); */
 /* min-height: 500px; */
 /* } */
-
+#service-background {
+  background-image: linear-gradient(
+      to bottom,
+      rgba(255, 255, 255, 0) 50%,
+      rgba(255, 255, 255, 1) 90%
+    ),
+    url("../images/services/services.jpeg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 70vh;
+  display: flex;
+  align-items: center;
+  color: white;
+}
+@media (max-width: 992px) {
+  #service-background {
+    background-image: linear-gradient(
+        to bottom,
+        rgba(255, 255, 255, 0) 50%,
+        rgba(255, 255, 255, 1) 90%
+      ),
+      url("../images/services/services\ copy\ Medium.jpeg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    height: 40vh;
+  }
+}
 /* Services Page-end */
 
 /* Gallery Page */
@@ -675,52 +692,47 @@ header {
   text-align: center;
 }
 
-#Gallery{
-  color:black;
-  font-family:arial;
-  text-align:center;
+#Gallery {
+  color: black;
+  font-family: arial;
+  text-align: center;
   font-size: 50pt;
   font-weight: bold;
 }
-#img-gal{
-  height:360px;
-  padding:30px; 
+#img-gal {
+  height: 360px;
+  padding: 30px;
 }
-#Doors{
- 
+#Doors {
   color: #444141;
   padding: 4rem;
-  text-align:center;
+  text-align: center;
   font-size: 50pt;
   font-weight: bold;
   height: 50px;
-  
- 
-
 }
-#Sheds{
+#Sheds {
   color: #444141;
   padding: 4rem;
-  text-align:center;
-  font-size: 50pt;
-  font-weight: bold;
-  height: 50px; 
-  box-sizing: border-box;
-}
-#Trailers{
-  color: #444141;
-  padding: 4rem;
-  text-align:center;
+  text-align: center;
   font-size: 50pt;
   font-weight: bold;
   height: 50px;
   box-sizing: border-box;
 }
-#Random{
- 
+#Trailers {
   color: #444141;
   padding: 4rem;
-  text-align:center;
+  text-align: center;
+  font-size: 50pt;
+  font-weight: bold;
+  height: 50px;
+  box-sizing: border-box;
+}
+#Random {
+  color: #444141;
+  padding: 4rem;
+  text-align: center;
   font-size: 50pt;
   font-weight: bold;
   height: 50px;
@@ -741,14 +753,13 @@ header {
   filter: blur(4px);
 }
 
-
-.social-media-icons, h2 {
-  
+.social-media-icons,
+h2 {
   text-shadow: 2px 2px 8px rgb(255, 255, 255);
 }
 
 #linksformbtn {
-   background-color: #f03636;
-   border-color: #b82111;
+  background-color: #f03636;
+  border-color: #b82111;
 }
 /*links page end*/
