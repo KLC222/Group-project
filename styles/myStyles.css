@@ -540,7 +540,7 @@ transition: transform 0.25s ease;
 }
 
 .related-products-heading {
-  margin-top: 600px; /* Updated margin to push related products down */
+  margin-top: 200px; /* Updated margin to push related products down */
 }
 
 
@@ -727,3 +727,28 @@ header {
   box-sizing: border-box;
 }
 /* Gallery Page-end */
+
+/*links page start*/
+.bg-image {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: -1;
+  opacity: 0.8;
+  filter: blur(4px);
+}
+
+
+.social-media-icons, h2 {
+  
+  text-shadow: 2px 2px 8px rgb(255, 255, 255);
+}
+
+#linksformbtn {
+   background-color: #f03636;
+   border-color: #b82111;
+}
+/*links page end*/
