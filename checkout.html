@@ -11,292 +11,270 @@
       crossorigin="anonymous"
     />
     <link href="styles/myStyles.css" rel="stylesheet" />
-    <link rel="stylesheet" href="styles/sty" media="screen" type="text/css" />
+    <link
+      rel="stylesheet"
+      href="styles/style.css"
+      media="screen"
+      type="text/css"
+    />
     <script
       type="text/javascript"
       src="https://ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"
     ></script>
     <script type="text/javascript" src="scripts/jquery.shop.js"></script>
   </head>
-  <body id="checkout-page">
+  <body>
     <!-- header -->
-    <div class="brand-container">
-      <div class="header-top">
-        <div class="container text-end pt-3">
-          <p id="header-top-phone">
-            <a href="https://www.facebook.com/creavenengineering/"
-              ><i class="bi-facebook"></i
-            ></a>
-            |
-            <a href="tel:0877890136"
-              ><i class="bi-telephone-fill"></i> 087 789 0136</a
-            >
-          </p>
+    <div class="brand-container"></div>
+    <div class="header-top">
+      <div class="container text-end pt-3">
+        <p id="header-top-phone">
+          <a href="https://www.facebook.com/creavenengineering/"
+            ><i class="bi-facebook"></i
+          ></a>
+          |
+          <a href="tel:0877890136"
+            ><i class="bi-telephone-fill"></i> 087 789 0136</a
+          >
+        </p>
+      </div>
+    </div>
+    <nav
+      class="navbar navbar-expand-lg sticky-lg-top"
+      style="background-color: #ffffff"
+    >
+      <div class="container">
+        <a class="navbar-brand d-block d-lg-none" href="index.html"
+          ><img src="images/LogoAnimationWhite.gif" width="200px" alt="logo"
+        /></a>
+        <button
+          class="navbar-toggler pull-right"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarTogglerDemo01"
+          aria-controls="navbarTogglerDemo01"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+          <ul
+            class="navbar-nav mb-2 mb-lg-0 flex-grow-1 justify-content-center nav-fill align-items-center"
+          >
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="index.html"
+                >Home</a
+              >
+            </li>
+            <li class="nav-item">
+              <span class="nav-background"></span>
+              <a class="nav-link" href="about.html">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="products.html">Products</a>
+            </li>
+            <a class="brand-large col-lg-3 d-none d-lg-block" href="index.html"
+              ><img
+                src="images/LogoAnimationWhite.gif"
+                width="400px"
+                alt="logo"
+            /></a>
+            <li class="nav-item">
+              <a class="nav-link" href="services.html">Services</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="gallery.html">Gallery</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="products.html">Links</a>
+            </li>
+          </ul>
         </div>
       </div>
-      <nav
-        class="navbar navbar-expand-lg sticky-lg-top"
-        style="background-color: #ffffff"
-      >
-        <div class="container">
-          <a class="navbar-brand d-block d-lg-none" href="index.html"
-            ><img src="images/LogoAnimationWhite.gif" width="200px" alt="logo"
-          /></a>
-          <button
-            class="navbar-toggler pull-right"
-            type="button"
-            data-bs-toggle="collapse"
-            data-bs-target="#navbarTogglerDemo01"
-            aria-controls="navbarTogglerDemo01"
-            aria-expanded="false"
-            aria-label="Toggle navigation"
-          >
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
-            <ul
-              class="navbar-nav mb-2 mb-lg-0 flex-grow-1 justify-content-center nav-fill align-items-center"
-            >
-              <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="index.html"
-                  >Home</a
-                >
-              </li>
-              <li class="nav-item">
-                <span class="nav-background"></span>
-                <a class="nav-link" href="about.html">About</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="products.html">Products</a>
-              </li>
-              <a
-                class="brand-large col-lg-3 d-none d-lg-block"
-                href="index.html"
-                ><img
-                  src="images/LogoAnimationWhite.gif"
-                  width="400px"
-                  alt="logo"
-              /></a>
-              <li class="nav-item">
-                <a class="nav-link" href="services.html">Services</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="gallery.html">Gallery</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="products.html">Links</a>
-              </li>
-            </ul>
+    </nav>
+
+    <!-- header end -->
+
+    <!-- main below -->
+
+    <div class="container">
+      <div id="site">
+        <div id="content">
+          <h1>Checkout</h1>
+          <table id="checkout-cart" class="shopping-cart">
+            <thead>
+              <tr>
+                <th scope="col">Item</th>
+                <th scope="col">Qty</th>
+                <th scope="col">Price</th>
+              </tr>
+            </thead>
+            <tbody></tbody>
+          </table>
+          <div id="pricing">
+            <p id="shipping">
+              <strong>Shipping</strong>: <span id="sshipping"></span>
+            </p>
+
+            <p id="sub-total">
+              <strong>Total</strong>: <span id="stotal"></span>
+            </p>
           </div>
-        </div>
-      </nav>
-      <!-- header end -->
 
-      <!-- main below -->
+          <form action="order.html" method="get" id="checkout-order-form">
+            <h2>Your Details</h2>
 
-      <div class="container">
-        <h1>Checkout</h1>
-        <table id="checkout-cart" class="shopping-cart">
-          <thead>
-            <tr>
-              <th scope="col">Item</th>
-              <th scope="col">Qty</th>
-              <th scope="col">Price</th>
-            </tr>
-          </thead>
-          <tbody></tbody>
-        </table>
-        <div id="pricing">
-          <p id="shipping">
-            <strong>Shipping</strong>: <span id="sshipping"></span>
-          </p>
-
-          <p id="sub-total">
-            <strong>Total</strong>: <span id="stotal"></span>
-          </p>
-        </div>
-
-        <form
-          action="order.html"
-          method="get"
-          id="checkout-order-form"
-          class="pb-5"
-        >
-          <h2>Your Details</h2>
-
-          <fieldset id="fieldset-billing">
-            <legend>Billing</legend>
-            <div class="mb-3 row">
-              <label for="name" class="col-sm-2 col-form-label">Name</label>
-              <div class="col-sm-10">
+            <fieldset id="fieldset-billing">
+              <legend>Billing</legend>
+              <div>
+                <label for="name">Name</label>
                 <input
                   type="text"
                   name="name"
                   id="name"
-                  class="form-control"
                   data-type="string"
                   data-message="This field cannot be empty"
                 />
               </div>
-            </div>
-            <div class="mb-3 row">
-              <label for="email" class="col-sm-2 col-form-label">Email</label>
-              <div class="col-sm-10">
+              <div>
+                <label for="email">Email</label>
                 <input
                   type="text"
                   name="email"
                   id="email"
-                  class="form-control"
                   data-type="expression"
                   data-message="Not a valid email address"
                 />
               </div>
-            </div>
-            <div class="mb-3 row">
-              <label for="city" class="col-sm-2 col-form-label">City</label>
-              <div class="col-sm-10">
+              <div>
+                <label for="city">City</label>
                 <input
                   type="text"
                   name="city"
                   id="city"
-                  class="form-control"
                   data-type="string"
                   data-message="This field cannot be empty"
                 />
               </div>
-            </div>
-            <div class="mb-3 row">
-              <label for="address" class="col-sm-2 col-form-label"
-                >Address</label
-              >
-              <div class="col-sm-10">
+              <div>
+                <label for="address">Address</label>
                 <input
                   type="text"
                   name="address"
                   id="address"
-                  class="form-control"
                   data-type="string"
                   data-message="This field cannot be empty"
                 />
               </div>
-            </div>
-            <div class="mb-3 row">
-              <label for="zip" class="col-sm-2 col-form-label">EIR Code</label>
-              <div class="col-sm-10">
+              <div>
+                <label for="zip">ZIP Code</label>
                 <input
                   type="text"
                   name="zip"
                   id="zip"
-                  class="form-control"
                   data-type="string"
                   data-message="This field cannot be empty"
                 />
               </div>
-            </div>
-          </fieldset>
-
-          <fieldset id="fieldset-shipping">
-            <div class="mb-3 row">
-              <legend class="col-sm-2">Shipping</legend>
-              <div class="col-sm-10">
-                <div class="form-check">
-                  <input
-                    type="checkbox"
-                    id="same-as-billing"
-                    class="form-check-input"
-                    data-bs-toggle="collapse"
-                    data-bs-target="#shipping"
-                    checked
-                  />
-                  <label for="same-as-billing" class="form-check-label"
-                    >Same as Billing</label
-                  >
-                </div>
+              <div>
+                <label for="country">Country</label>
+                <select
+                  name="country"
+                  id="country"
+                  data-type="string"
+                  data-message="This field cannot be empty"
+                >
+                  <option value="">Select</option>
+                  <option value="US">USA</option>
+                  <option value="IT">Italy</option>
+                </select>
               </div>
+            </fieldset>
+
+            <div id="shipping-same">
+              Same as Billing
+              <input type="checkbox" id="same-as-billing" value="" />
             </div>
 
-            <div id="shipping" class="collapse">
-              <div class="mb-3 row">
-                <label for="sname" class="col-sm-2 col-form-label">Name</label>
-                <div class="col-sm-10">
-                  <input
-                    type="text"
-                    name="sname"
-                    id="sname"
-                    class="form-control"
-                    data-type="string"
-                    data-message="This field cannot be empty"
-                  />
-                </div>
-              </div>
-              <div class="mb-3 row">
-                <label for="semail" class="col-sm-2 col-form-label"
-                  >Email</label
-                >
-                <div class="col-sm-10">
-                  <input
-                    type="text"
-                    name="semail"
-                    id="semail"
-                    class="form-control"
-                    data-type="expression"
-                    data-message="Not a valid email address"
-                  />
-                </div>
-              </div>
-              <div class="mb-3 row">
-                <label for="scity" class="col-sm-2 col-form-label">City</label>
-                <div class="col-sm-10">
-                  <input
-                    type="text"
-                    name="scity"
-                    id="scity"
-                    class="form-control"
-                    data-type="string"
-                    data-message="This field cannot be empty"
-                  />
-                </div>
-              </div>
-              <div class="mb-3 row">
-                <label for="saddress" class="col-sm-2 col-form-label"
-                  >Address</label
-                >
-                <div class="col-sm-10">
-                  <input
-                    type="text"
-                    name="saddress"
-                    id="saddress"
-                    class="form-control"
-                    data-type="string"
-                    data-message="This field cannot be empty"
-                  />
-                </div>
-              </div>
-              <div class="mb-3 row">
-                <label for="szip" class="col-sm-2 col-form-label"
-                  >EIR Code</label
-                >
-                <div class="col-sm-10">
-                  <input
-                    type="text"
-                    name="szip"
-                    id="szip"
-                    class="form-control"
-                    data-type="string"
-                    data-message="This field cannot be empty"
-                  />
-                </div>
-              </div>
-            </div>
-          </fieldset>
+            <fieldset id="fieldset-shipping">
+              <legend>Shipping</legend>
 
-          <input
-            type="submit"
-            id="submit-order"
-            value="Submit"
-            class="btn btn-custom"
-          />
-        </form>
+              <div>
+                <label for="sname">Name</label>
+                <input
+                  type="text"
+                  name="sname"
+                  id="sname"
+                  data-type="string"
+                  data-message="This field cannot be empty"
+                />
+              </div>
+              <div>
+                <label for="semail">Email</label>
+                <input
+                  type="text"
+                  name="semail"
+                  id="semail"
+                  data-type="expression"
+                  data-message="Not a valid email address"
+                />
+              </div>
+              <div>
+                <label for="scity">City</label>
+                <input
+                  type="text"
+                  name="scity"
+                  id="scity"
+                  data-type="string"
+                  data-message="This field cannot be empty"
+                />
+              </div>
+              <div>
+                <label for="saddress">Address</label>
+                <input
+                  type="text"
+                  name="saddress"
+                  id="saddress"
+                  data-type="string"
+                  data-message="This field cannot be empty"
+                />
+              </div>
+              <div>
+                <label for="szip">ZIP Code</label>
+                <input
+                  type="text"
+                  name="szip"
+                  id="szip"
+                  data-type="string"
+                  data-message="This field cannot be empty"
+                />
+              </div>
+              <div>
+                <label for="scountry">Country</label>
+                <select
+                  name="scountry"
+                  id="scountry"
+                  data-type="string"
+                  data-message="This field cannot be empty"
+                >
+                  <option value="">Select</option>
+                  <option value="US">USA</option>
+                  <option value="IT">Italy</option>
+                </select>
+              </div>
+            </fieldset>
+
+            <p>
+              <input
+                type="submit"
+                id="submit-order"
+                value="Submit"
+                class="btn"
+              />
+            </p>
+          </form>
+        </div>
       </div>
     </div>
 
@@ -355,5 +333,10 @@
       integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
       crossorigin="anonymous"
     ></script>
+    <script
+      type="text/javascript"
+      src="https://ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"
+    ></script>
+    <script type="text/javascript" src="scripts/jquery.shop.js"></script>
   </body>
 </html>
