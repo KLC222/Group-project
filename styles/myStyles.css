@@ -258,6 +258,65 @@ body {
 
 /* About Page */
 
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+  
+}
+
+html {
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.column {
+  width: 80%;
+  max-width: 400px;
+  margin: 16px;
+  padding: 16px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  background-color: #fff;
+
+}
+.about-section {
+    padding: 50px;
+    text-align: center;
+    background-image: linear-gradient(
+      to bottom,
+      rgba(255, 255, 255, 0) 50%,
+      rgba(255, 255, 255, 1) 90%
+    ),
+    url("..\images\metalBackground.jpeg"); /* update the path to your image */
+  background-position: center;
+  background-repeat: no-repeat;
+  background: size 100px;
+  height: 1000vh;
+    
+}
+
+
+
+.container {
+  padding: 0 16px;
+}
+
+.title {
+  color: rgb(171, 35, 35);
+}
+
+
+
+
 /* About Page-end */
 
 /* Products Page */

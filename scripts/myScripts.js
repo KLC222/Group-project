@@ -173,3 +173,13 @@ document.addEventListener('DOMContentLoaded', function () {
 });
 
 //PRODUCTS BOLTS PAGE END
+
+
+
+//About Page
+
+function changeBackgroundColor() {
+  var body = document.getElementsByTagName("body")[0];
+  body.style.backgroundColor = "#ff9800";
+}
+//End About Page
