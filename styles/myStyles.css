@@ -258,60 +258,55 @@ body {
 
 /* About Page */
 
-
-body {
-  font-family: Arial, Helvetica, sans-serif;
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500&display=swap');
+*{
   margin: 0;
-  
-}
-
-html {
+  padding: 0;
   box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
 }
-
-*, *:before, *:after {
-  box-sizing: inherit;
+.about-us{
+  height: 100vh;
+  width: 100%;
+  padding: 90px 0;
+  background: #ddd;
 }
-
-.row {
+.pic{
+  height: auto;
+  width:  302px;
+}
+.about{
+  width: 1130px;
+  max-width: 85%;
+  margin: 0 auto;
   display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
+  align-items: center;
+  justify-content: space-around;
 }
-
-.column {
-  width: 80%;
-  max-width: 400px;
-  margin: 16px;
-  padding: 16px;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-  background-color: #fff;
+.text{
+  width: 540px;
+}
+.text h2{
+  font-size: 90px;
+  font-weight: 600;
+  margin-bottom: 10px;
 
 }
-.about-section {
-    padding: 50px;
-    text-align: center;
-    background-image: linear-gradient(
-      to bottom,
-      rgba(255, 255, 255, 0) 50%,
-      rgba(255, 255, 255, 1) 90%
-    ),
-    url("..\images\metalBackground.jpeg"); /* update the path to your image */
-  background-position: center;
-  background-repeat: no-repeat;
-  background: size 100px;
-  height: 1000vh;
-    
+.text h5{
+  font-size: 22px;
+  font-weight: 500;
+  margin-bottom: 20px;
 }
-
-
-
-.container {
-  padding: 0 16px;
+span{
+  color: #4070f4;
 }
-
-.title {
-  color: rgb(171, 35, 35);
+.text p{
+  font-size: 18px;
+  line-height: 25px;
+  letter-spacing: 1px;
+}
+.data{
+  margin-top: 30px;
 }
 
 
