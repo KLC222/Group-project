@@ -258,24 +258,24 @@ body {
 
 /* About Page */
 
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500&display=swap');
-*{
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500&display=swap");
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
 }
-.about-us{
+.about-us {
   height: 100vh;
   width: 100%;
   padding: 90px 0;
   background: #ddd;
 }
-.pic{
+.pic {
   height: auto;
-  width:  302px;
+  width: 302px;
 }
-.about{
+.about {
   width: 1130px;
   max-width: 85%;
   margin: 0 auto;
@@ -283,13 +283,13 @@ body {
   align-items: center;
   justify-content: space-around;
 }
-.text{
+.text {
   width: 540px;
 }
 .about-section {
-    padding: 50px;
-    text-align: center;
-    background-image: linear-gradient(
+  padding: 50px;
+  text-align: center;
+  background-image: linear-gradient(
       to bottom,
       rgba(255, 255, 255, 0) 50%,
       rgba(255, 255, 255, 1) 90%
@@ -299,26 +299,22 @@ body {
   background-repeat: no-repeat;
   background: size 100px;
   height: 1000vh;
-    
 }
-
-
 
 .container {
   padding: 0 16px;
 }
-span{
+span {
   color: #4070f4;
 }
-.text p{
+.text p {
   font-size: 18px;
   line-height: 25px;
   letter-spacing: 1px;
 }
-.data{
+.data {
   margin-top: 30px;
 }
-
 
 /* About Page-end */
 
@@ -813,7 +809,6 @@ header {
   opacity: 0.8;
   filter: blur(4px);
 }
-
 
 .social-media-icons,
 h2 {
