@@ -810,10 +810,35 @@ header {
   filter: blur(4px);
 }
 
-.social-media-icons,
-h2 {
-  text-shadow: 2px 2px 8px rgb(255, 255, 255);
+.social-media-cards, h2 {
+  text-align: center;
 }
+
+.social-media-cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.cardsm {
+  display: flex;
+  align-items: center;
+  width: 300px;
+  margin: 20px;
+  padding: 10px;
+  box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.3);
+}
+
+.cardsm img {
+  width: 50px;
+  margin-right: 10px;
+}
+
+.username {
+  font-size: 1.2em;
+  font-weight: bold;
+}
+
 
 #linksformbtn {
   background-color: #f03636;
