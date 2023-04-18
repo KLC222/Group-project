@@ -882,7 +882,7 @@ header {
   flex-direction: column;
 }
 
-.cardsm {
+.linkscardsm {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -893,12 +893,12 @@ header {
   transition: transform 0.3s, box-shadow 0.3s;
 }
 
-.cardsm:hover {
+.linkscardsm:hover {
   transform: translateY(-10px);
   box-shadow: 2px 4px 16px rgba(0, 0, 0, 0.3);
 }
 
-.cardsm img {
+.linkscardsm img {
   width: 50px;
   margin-right: 10px;
 }
@@ -908,13 +908,15 @@ body {
   font-family: Arial, sans-serif;
 }
 
-.col-md-6 {
+.formcontrollinks {
   max-width: 600px;
   margin: 0 auto;
   padding: 20px;
   background-color: #f9f9f9;
   border-radius: 5px;
-  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.534);
+  margin-bottom: 30px;
+  margin-top: 30px;
 }
 
 h2 {
@@ -951,9 +953,10 @@ form {
 }
 
 .form-control:focus {
-  border-color: #66afe9;
+  border-color: #b82111;
   outline: 0;
-  box-shadow: 0 0 8px rgba(102, 175, 233, 0.6);
+  box-shadow: 0 0 8px #b82111;
+  
 }
 
 /* Button Styles */
@@ -1022,7 +1025,7 @@ form {
 	top: 20px;
 	width: 300px;
 	height: 220px;
-	background: #333;
+
 	border-radius: 12px;
 	overflow: hidden;
 	transition: 0.5s;
@@ -1082,6 +1085,6 @@ form {
 }
 
 .RelateimgBx{
-  margin-left: 30px;
+  margin-left: 10px;
 }
 /*links page end*/
