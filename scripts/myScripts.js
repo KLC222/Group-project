@@ -1,9 +1,9 @@
 function changeTextColor() {
-	if (document.getElementById("paratxt").style.color == "red") {
-		document.getElementById("paratxt").style.color = "blue";
-	} else {
-		document.getElementById("paratxt").style.color = "red";
-	}   
+  if (document.getElementById("paratxt").style.color == "red") {
+    document.getElementById("paratxt").style.color = "blue";
+  } else {
+    document.getElementById("paratxt").style.color = "red";
+  }
 }
 
 //PRODUCTS PAGE SCRIPT
@@ -24,8 +24,6 @@ document.addEventListener("DOMContentLoaded", function () {
       }
     });
   }
- 
-  
 
   function filterProducts(e) {
     const searchTerm = e.target.value.toLowerCase();
@@ -60,8 +58,6 @@ document.addEventListener("DOMContentLoaded", function () {
   onScroll();
 });
 
-
-
 document.addEventListener("DOMContentLoaded", function () {
   var modal = document.getElementById("modal");
   var btn = document.querySelector(".product-button");
@@ -70,45 +66,46 @@ document.addEventListener("DOMContentLoaded", function () {
   btn.onclick = function () {
     modal.style.display = "block";
     setTimeout(function () {
-      document.querySelector(".modal-content").style.transform = "translateY(25%)";
+      document.querySelector(".modal-content").style.transform =
+        "translateY(25%)";
       document.querySelector(".modal-content").style.opacity = "1";
     }, 1);
   };
-  
+
   span.onclick = function () {
-    document.querySelector(".modal-content").style.transform = "translateY(-100%)";
+    document.querySelector(".modal-content").style.transform =
+      "translateY(-100%)";
     document.querySelector(".modal-content").style.opacity = "0";
     setTimeout(function () {
       modal.style.display = "none";
     }, 300);
   };
-  
+
   window.onclick = function (event) {
     if (event.target == modal) {
-      document.querySelector(".modal-content").style.transform = "translateY(-100%)";
+      document.querySelector(".modal-content").style.transform =
+        "translateY(-100%)";
       document.querySelector(".modal-content").style.opacity = "0";
       setTimeout(function () {
         modal.style.display = "none";
       }, 300);
     }
   };
-  
 });
-
 
 //PRODUCTS PAGE SCRIPT END
 
 //PRODUCTS BOLTS PAGE SCRIPT
 
 function addImageZoom() {
-  const imageWrapper = document.querySelector('.product-image-wrapper');
-  const productImage = document.querySelector('.product-image');
+  const imageWrapper = document.querySelector(".product-image-wrapper");
+  const productImage = document.querySelector(".product-image");
 
   if (!imageWrapper || !productImage) {
     return;
   }
 
-  imageWrapper.addEventListener('mousemove', (e) => {
+  imageWrapper.addEventListener("mousemove", (e) => {
     const rect = imageWrapper.getBoundingClientRect();
     const x = e.clientX - rect.left;
     const y = e.clientY - rect.top;
@@ -120,52 +117,52 @@ function addImageZoom() {
     productImage.style.transform = `scale(${zoomLevel})`;
   });
 
-  imageWrapper.addEventListener('mouseleave', () => {
-    productImage.style.transform = '';
+  imageWrapper.addEventListener("mouseleave", () => {
+    productImage.style.transform = "";
   });
 }
 
-document.addEventListener('DOMContentLoaded', function () {
+document.addEventListener("DOMContentLoaded", function () {
   // Add the following line inside the DOMContentLoaded event handler:
   addImageZoom();
 
   // ... (your existing code)
 });
 
-
-
 function handleForm() {
-  document.querySelector('.enquire-btn').addEventListener('click', () => {
-    const formContainer = document.querySelector('.form-container');
-    formContainer.classList.remove('hidden');
-    formContainer.style.opacity = '0';
+  document.querySelector(".enquire-btn").addEventListener("click", () => {
+    const formContainer = document.querySelector(".form-container");
+    formContainer.classList.remove("hidden");
+    formContainer.style.opacity = "0";
     setTimeout(() => {
-      formContainer.style.opacity = '1';
+      formContainer.style.opacity = "1";
     }, 50);
   });
 
-  document.querySelector('.cancel-btn').addEventListener('click', () => {
-    const formContainer = document.querySelector('.form-container');
-    formContainer.style.opacity = '0';
+  document.querySelector(".cancel-btn").addEventListener("click", () => {
+    const formContainer = document.querySelector(".form-container");
+    formContainer.style.opacity = "0";
     setTimeout(() => {
-      formContainer.classList.add('hidden');
+      formContainer.classList.add("hidden");
     }, 300);
   });
 
-  document.querySelector('.enquiry-form').addEventListener('submit', (event) => {
-    event.preventDefault();
+  document
+    .querySelector(".enquiry-form")
+    .addEventListener("submit", (event) => {
+      event.preventDefault();
 
-    // Handle form submission logic here, e.g. sending data to a server
+      // Handle form submission logic here, e.g. sending data to a server
 
-    const formContainer = document.querySelector('.form-container');
-    formContainer.style.opacity = '0';
-    setTimeout(() => {
-      formContainer.classList.add('hidden');
-    }, 300);
-  });
+      const formContainer = document.querySelector(".form-container");
+      formContainer.style.opacity = "0";
+      setTimeout(() => {
+        formContainer.classList.add("hidden");
+      }, 300);
+    });
 }
 
-document.addEventListener('DOMContentLoaded', function () {
+document.addEventListener("DOMContentLoaded", function () {
   // Add the following line inside the DOMContentLoaded event handler:
   handleForm();
 
@@ -173,8 +170,6 @@ document.addEventListener('DOMContentLoaded', function () {
 });
 
 //PRODUCTS BOLTS PAGE END
-
-
 
 //About Page
 
@@ -184,9 +179,21 @@ function changeBackgroundColor() {
 }
 //End About Page
 
+// Service page start
+const observer = new IntersectionObserver((entries) => {
+  entries.forEach((entry) => {
+    if (entry.isIntersecting) {
+      entry.target.classList.add("animate");
+    }
+  });
+});
+
+for (const imgScroll of document.querySelectorAll(".img-scroll")) {
+  observer.observe(imgScroll);
+}
+
+// Service page end
 
 //LINKS PAGE START
-
-
 
 //LINKS PAGE END
