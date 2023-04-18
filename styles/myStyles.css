@@ -269,6 +269,8 @@ body {
   height: 100vh;
   width: 100%;
   padding: 90px 0;
+  font-display:bold;
+ 
   
 }
 #img-gal {
@@ -317,7 +319,7 @@ height: 100%;
 object-fit: cover;
 z-index: -1;
 opacity: 0.8;
-filter: blur(4px);
+filter: blur(6px);
 
 }
 
@@ -326,15 +328,20 @@ filter: blur(4px);
 }
 span {
   color: #4070f4;
+  font-display:bold;
+  font-size: 25px;
 }
 .text p {
-  font-size: 18px;
+  font-size: 25px;
+  font-display:bold;
+  color:rgb(255, 255, 255);
   line-height: 25px;
   letter-spacing: 1px;
 }
 .data {
   margin-top: 30px;
 }
+
 
 /* About Page-end */
 
