@@ -879,6 +879,79 @@ header {
   margin-right: 10px;
 }
 
+/* General Styles */
+body {
+  font-family: Arial, sans-serif;
+}
+
+.col-md-6 {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #f9f9f9;
+  border-radius: 5px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+  font-size: 24px;
+  font-weight: 600;
+  color: #333;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+/* Form Styles */
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-group {
+  margin-bottom: 15px;
+}
+
+.form-group label {
+  display: block;
+  font-size: 14px;
+  font-weight: 600;
+  margin-bottom: 5px;
+}
+
+.form-control {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 14px;
+}
+
+.form-control:focus {
+  border-color: #66afe9;
+  outline: 0;
+  box-shadow: 0 0 8px rgba(102, 175, 233, 0.6);
+}
+
+/* Button Styles */
+#linksformbtn {
+  background-color: #007bff;
+  border-color: #007bff;
+  color: #fff;
+  cursor: pointer;
+  font-size: 14px;
+  padding: 10px 20px;
+  border-radius: 4px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  text-transform: uppercase;
+}
+
+#linksformbtn:hover {
+  background-color: #0056b3;
+  border-color: #0056b3;
+}
+
+/* User Styles */
 .username {
   font-size: 1.2em;
   font-weight: bold;
@@ -890,12 +963,4 @@ header {
   text-decoration: underline;
 }
 
-
-
-#linksformbtn {
-  background-color: #f03636;
-  border-color: #b82111;
-  margin-top: 10px;
-  margin-bottom: 10px;
-}
 /*links page end*/
