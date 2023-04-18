@@ -332,9 +332,9 @@ filter: blur(6px);
   padding: 0 16px;
 }
 span {
-  color: #4070f4;
+  color: #ff0000;
   font-display:bold;
-  font-size: 25px;
+  font-size: 30px;
 }
 .text p {
   font-size: 25px;
