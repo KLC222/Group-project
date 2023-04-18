@@ -269,9 +269,7 @@ body {
   height: 100vh;
   width: 100%;
   padding: 90px 0;
-  font-display:bold;
- 
-  
+  font-display: bold;
 }
 
 .aboutBusiness {
@@ -295,12 +293,11 @@ body {
   width: 540px;
 }
 
-
 .about-section {
   padding: 50px;
   text-align: center;
 
-/* background-image: linear-gradient(                        <-- OLD CODE COMMENTED OUT TO MAKE NEW CODE - .bg-image-about - WORK
+  /* background-image: linear-gradient(                        <-- OLD CODE COMMENTED OUT TO MAKE NEW CODE - .bg-image-about - WORK
     to bottom,
     rgba(255, 255, 255, 0) 50%,
     rgba(255, 255, 255, 1) 90%
@@ -308,24 +305,21 @@ body {
    rgba(255, 255, 255, 1) 90%
 ),
   url("..\images\metalBackground.jpeg"); /* update the path to your image */
-background-position: center;
-background-repeat: no-repeat;
- 
-  
+  background-position: center;
+  background-repeat: no-repeat;
 }
 
-
-.bg-image-about{  /* ADDED FOR BACKGROUND IMAGE */
-position: fixed;
-top: 0;
-left: 0;
-width: 100%;
-height: 100%;
-object-fit: cover;
-z-index: -1;
-opacity: 0.8;
-filter: blur(6px);
-
+.bg-image-about {
+  /* ADDED FOR BACKGROUND IMAGE */
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: -1;
+  opacity: 0.8;
+  filter: blur(6px);
 }
 
 .container {
@@ -333,35 +327,19 @@ filter: blur(6px);
 }
 span {
   color: #ff0000;
-  font-display:bold;
+  font-display: bold;
   font-size: 30px;
 }
 .text p {
   font-size: 25px;
-  font-display:bold;
-  color:rgb(255, 255, 255);
+  font-display: bold;
+  color: rgb(255, 255, 255);
   line-height: 25px;
   letter-spacing: 1px;
 }
 .data {
   margin-top: 30px;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 /* About Page-end */
 
@@ -757,6 +735,25 @@ span {
   background-image: linear-gradient(30deg, grey 50%, red 50%); */
 /* min-height: 500px; */
 /* } */
+.img-scroll {
+  opacity: 0;
+  transform: translateY(50px);
+  transition: opacity 2s ease, transform 2s ease;
+}
+
+.img-scroll.animate {
+  opacity: 1;
+  transform: translateY(0);
+}
+.s-content-background {
+  background-color: rgba(0, 0, 0, 0.1);
+}
+.text-deco {
+  text-shadow: #ffffff 2px 1px 5px;
+}
+.text-deco2 {
+  text-shadow: black 2px 1px 6px;
+}
 #service-background {
   background-image: linear-gradient(
       to bottom,
@@ -786,6 +783,7 @@ span {
     height: 40vh;
   }
 }
+
 /* Services Page-end */
 
 /* Gallery Page */
@@ -857,7 +855,7 @@ header {
   filter: blur(4px);
 }
 
-.social-media-cards{
+.social-media-cards {
   text-align: center;
 }
 .connectUs {
@@ -904,8 +902,6 @@ header {
 .username:hover {
   text-decoration: underline;
 }
-
-
 
 #linksformbtn {
   background-color: #f03636;
