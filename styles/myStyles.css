@@ -274,6 +274,10 @@ body {
   
 }
 
+.aboutBusiness {
+  font-weight: bold;
+}
+
 #img-gal {
   height: auto;
   width: 600px;
