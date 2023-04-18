@@ -271,9 +271,10 @@ body {
   padding: 90px 0;
   
 }
-.pic {
+#img-gal {
   height: auto;
-  width: 302px;
+  width: 600px;
+  max-width: 400px;
 }
 .about {
   width: 1130px;
