@@ -842,8 +842,12 @@ header {
   filter: blur(4px);
 }
 
-.social-media-cards, h2 {
+.social-media-cards{
   text-align: center;
+}
+.connectUs {
+  text-align: center;
+  color: white;
 }
 
 .social-media-cards {
@@ -891,5 +895,7 @@ header {
 #linksformbtn {
   background-color: #f03636;
   border-color: #b82111;
+  margin-top: 10px;
+  margin-bottom: 10px;
 }
 /*links page end*/

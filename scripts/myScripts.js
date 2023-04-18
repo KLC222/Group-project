@@ -183,3 +183,10 @@ function changeBackgroundColor() {
   body.style.backgroundColor = "#ff9800";
 }
 //End About Page
+
+
+//LINKS PAGE START
+
+
+
+//LINKS PAGE END
