@@ -271,6 +271,7 @@ body {
   padding: 90px 0;
   
 }
+
 #img-gal {
   height: auto;
   width: 600px;
@@ -838,15 +839,24 @@ header {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+  align-items: center;
+  flex-direction: column;
 }
 
 .cardsm {
   display: flex;
+  flex-direction: column;
   align-items: center;
   width: 300px;
   margin: 20px;
   padding: 10px;
   box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.3);
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.cardsm:hover {
+  transform: translateY(-10px);
+  box-shadow: 2px 4px 16px rgba(0, 0, 0, 0.3);
 }
 
 .cardsm img {
@@ -857,7 +867,14 @@ header {
 .username {
   font-size: 1.2em;
   font-weight: bold;
+  text-decoration: none;
+  color: inherit;
 }
+
+.username:hover {
+  text-decoration: underline;
+}
+
 
 
 #linksformbtn {
