@@ -758,6 +758,7 @@ span {
   background-color: rgba(0, 0, 0, 0.1);
 }
 .text-deco {
+  color: white;
   text-shadow: #ffffff 2px 1px 5px;
 }
 .text-deco2 {
@@ -796,7 +797,7 @@ span {
 /* Services Page-end */
 
 /* Gallery Page */
-header {
+ #Gallery{
   background-image: linear-gradient(to bottom right, #747676, #747676);
   color: #444141;
   padding: 4rem;
@@ -814,7 +815,7 @@ header {
   height: 360px;
   padding: 30px;
 }
-#Doors {
+/* #Doors {
   color: #444141;
   padding: 4rem;
   text-align: center;
@@ -848,7 +849,7 @@ header {
   font-weight: bold;
   height: 50px;
   box-sizing: border-box;
-}
+} */
 /* Gallery Page-end */
 
 /*links page start*/
