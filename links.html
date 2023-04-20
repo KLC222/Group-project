@@ -2,14 +2,19 @@
 <html lang="en">
   <head>
     <!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-Z1GYD69476"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-Z1GYD69476"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
 
-  gtag('config', 'G-Z1GYD69476');
-</script>
+      gtag("config", "G-Z1GYD69476");
+    </script>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Creaven Engineering</title>
@@ -23,9 +28,7 @@
   </head>
   <body>
     <!-- header -->
-   
-    
-    
+
     <div class="brand-container"></div>
     <div class="header-top">
       <div class="container text-end pt-3">
@@ -64,9 +67,7 @@
             class="navbar-nav mb-2 mb-lg-0 flex-grow-1 justify-content-center nav-fill align-items-center"
           >
             <li class="nav-item">
-              <a class="nav-link"  href="index.html"
-                >Home</a
-              >
+              <a class="nav-link" href="index.html">Home</a>
             </li>
             <li class="nav-item">
               <span class="nav-background"></span>
@@ -80,6 +81,20 @@
                 src="images/LogoAnimationWhite.gif"
                 width="400px"
                 alt="logo"
+<<<<<<< HEAD
+            /></a>
+            <li class="nav-item">
+              <a class="nav-link" href="services.html">Services</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="gallery.html">Gallery</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="links.html">Links</a>
+            </li>
+          </ul>
+        </div>
+=======
                 /></a>
                 <li class="nav-item">
                   <a class="nav-link" href="services.html">Services</a>
@@ -215,51 +230,173 @@
           alt="logo"
           class="img-fluid"
         />
+>>>>>>> abc2713a4bb30589ee693ce193898fa04d4550e4
       </div>
-      <!-- footer links -->
-      <div class="col-lg-3">
-        <div class="row">
-          <div class="col d-flex flex-column footerLinks">
-            <h4>Website</h4>
-            <a href="index.html">Home</a>
-            <a href="about.html">About</a>
-            <a href="products.html">Products</a>
-            <a href="services.html">Services</a>
-            <a href="gallery.html">Gallery</a>
-            <a href="contact.html">Contact</a>
-            <a href="links.html">Links</a>
+    </nav>
+    <!-- header end -->
+    <div class="bg-container">
+      <img
+        src="images/Image (1).jpeg"
+        class="bg-image"
+        alt="Background Image"
+      />
+    </div>
+
+    <!-- main content -->
+    <div class="container mt-5">
+      <h2 class="connectUs">Connect With Us</h2>
+      <div class="social-media-cards">
+        <div class="linkscardsm">
+          <img src="images/fbicon.png" alt="Facebook icon" />
+          <a
+            class="username"
+            href="https://www.facebook.com/creavenengineering/"
+            >Creaven Engineering</a
+          >
+        </div>
+        <div class="linkscardsm">
+          <img src="images/twticon.png" alt="Twitter icon" />
+          <a class="username" href="https://twitter.com/creaveneng"
+            >@creaveneng</a
+          >
+        </div>
+        <div class="linkscardsm">
+          <img src="images/instaicon.png" alt="Instagram icon" />
+          <a
+            class="username"
+            href="https://www.instagram.com/creavenengineering/"
+            >@creavenengineering</a
+          >
+        </div>
+        <div class="linkscardsm">
+          <img src="images/yticon.webp" alt="YouTube icon" />
+          <a
+            class="username"
+            href="https://www.youtube.com/channel/creavenengineering"
+            >@creavenengineering</a
+          >
+        </div>
+        <div class="linkscardsm">
+          <img src="images/ddicon.png" alt="DonDeal icon" />
+          <a class="username" href="https://www.donedeal.ie/all?userId=4436596"
+            >@creavenengineering</a
+          >
+        </div>
+        <!-- Add more social media cards as needed -->
+      </div>
+
+      <div class="formcontrollinks">
+        <h2>Contact Us</h2>
+        <form id="contact-form" method="post" action="">
+          <div class="form-group">
+            <label for="name">Name</label>
+            <input
+              type="text"
+              class="form-control"
+              id="name"
+              name="name"
+              placeholder="Enter your name"
+              required
+            />
           </div>
-          <div class="col d-flex flex-column">
-            <h4>Services</h4>
-            <div>Custom fabrication</div>
-            <div>Welding repairs</div>
-            <div>Garden sheds</div>
-            <div>Doors</div>
-            <div>Frames</div>
-            <div>Steel cutting-drilling</div>
-            <div>Mobile welding</div>
+          <div class="form-group">
+            <label for="email">Email address</label>
+            <input
+              type="email"
+              class="form-control"
+              id="email"
+              name="email"
+              placeholder="Enter your email"
+              required
+            />
+          </div>
+          <div class="form-group">
+            <label for="subject">Subject</label>
+            <input
+              type="text"
+              class="form-control"
+              id="subject"
+              name="subject"
+              placeholder="Enter the subject of your message"
+              required
+            />
+          </div>
+          <div class="form-group">
+            <label for="message">Message</label>
+            <textarea
+              class="form-control"
+              id="message"
+              name="message"
+              rows="5"
+              placeholder="Enter your message"
+              required
+            ></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary" id="linksformbtn">
+            Send Message
+          </button>
+        </form>
+      </div>
+    </div>
+
+    <!-- main content end -->
+
+    <!-- footer -->
+    <script src="scripts/myScripts.js"></script>
+
+    <div class="footer-background">
+      <div class="container">
+        <div class="row py-4">
+          <div class="col-lg-3 d-none d-lg-block pt-5">
+            <img
+              src="images/LogoAnimationGrey.gif"
+              alt="logo"
+              class="img-fluid"
+            />
+          </div>
+          <!-- footer links -->
+          <div class="col-lg-3">
+            <div class="row">
+              <div class="col d-flex flex-column footerLinks">
+                <h4>Website</h4>
+                <a href="index.html">Home</a>
+                <a href="about.html">About</a>
+                <a href="products.html">Products</a>
+                <a href="services.html">Services</a>
+                <a href="gallery.html">Gallery</a>
+                <a href="links.html">Contact</a>
+              </div>
+              <div class="col d-flex flex-column">
+                <h4>Services</h4>
+                <div>Custom fabrication</div>
+                <div>Welding repairs</div>
+                <div>Garden sheds</div>
+                <div>Doors</div>
+                <div>Frames</div>
+                <div>Steel cutting-drilling</div>
+                <div>Mobile welding</div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-6 text-center">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d9499.776006142389!2d-9.114910210179163!3d53.469460878508876!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x485bebe739cba97b%3A0xa00c7a99731d270!2sHeadford%2C%20Co.%20Galway!5e0!3m2!1sen!2sie!4v1677683049701!5m2!1sen!2sie"
+              width="300"
+              height="225"
+              style="border: 0"
+              allowfullscreen=""
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+            ></iframe>
           </div>
         </div>
       </div>
-      <div class="col-lg-6 text-center">
-        <iframe
-          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d9499.776006142389!2d-9.114910210179163!3d53.469460878508876!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x485bebe739cba97b%3A0xa00c7a99731d270!2sHeadford%2C%20Co.%20Galway!5e0!3m2!1sen!2sie!4v1677683049701!5m2!1sen!2sie"
-          width="300"
-          height="225"
-          style="border: 0"
-          allowfullscreen=""
-          loading="lazy"
-          referrerpolicy="no-referrer-when-downgrade"
-        ></iframe>
-      </div>
     </div>
-  </div>
-</div>
-<script
-  src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
-  integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
-  crossorigin="anonymous"
-></script>
-<script src="scripts/jquery.shop.js"></script>
-</body>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+      crossorigin="anonymous"
+    ></script>
+    <script src="scripts/jquery.shop.js"></script>
+  </body>
 </html>
