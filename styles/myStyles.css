@@ -348,6 +348,11 @@ span {
 .data {
   margin-top: 30px;
 }
+.img-gal3{
+ 
+ 
+}
+
 
 /* About Page-end */
 
@@ -988,6 +993,7 @@ form {
 }
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 .Relatecontainer {
   position: relative;
   display: flex;
@@ -1077,12 +1083,17 @@ form {
 =======
 }
 
+=======
+>>>>>>> 0a2b66aa3c9f54a6c966398518ab32b7889dbfaa
 #linksformbtn {
   background-color: #f03636;
   border-color: #b82111;
   margin-top: 10px;
   margin-bottom: 10px;
+<<<<<<< HEAD
 >>>>>>> 3f1454b6c05379c44054e0a89d2dfefcbb32074c
 >>>>>>> cbd99dad5369d8070cb60c7dd008694295f3664f
+=======
+>>>>>>> 0a2b66aa3c9f54a6c966398518ab32b7889dbfaa
 }
 /*links page end*/
