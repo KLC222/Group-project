@@ -266,8 +266,8 @@ body {
   font-family: "Poppins", sans-serif;
 }
 .about-us {
-  height: 100vh;
-  width: 100%;
+  /* height: 100vh;
+  width: 100%; */
   padding: 90px 0;
   font-display: bold;
 }
@@ -289,7 +289,7 @@ body {
 }
 
 .about {
-  width: 1130px;
+  /* width: 1130px; */
   max-width: 85%;
   margin: 0 auto;
   display: flex;
@@ -297,10 +297,9 @@ body {
   justify-content: space-around;
 }
 
-
-.text {
+/* .text {
   width: 540px;
-}
+} */
 
 .about-section {
   padding: 50px;
@@ -797,7 +796,7 @@ span {
 /* Services Page-end */
 
 /* Gallery Page */
- #Gallery{
+#Gallery {
   background-image: linear-gradient(to bottom right, #747676, #747676);
   color: #444141;
   padding: 4rem;
@@ -955,7 +954,6 @@ form {
   border-color: #b82111;
   outline: 0;
   box-shadow: 0 0 8px #b82111;
-  
 }
 
 /* Button Styles */
@@ -989,109 +987,88 @@ form {
   text-decoration: underline;
 }
 
-<<<<<<< HEAD
+.Relatecontainer {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 100px 50px;
+  padding: 100px 50px;
+}
+.Relatecontainer .Relatecard {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  width: 350px;
+  height: 300px;
+  background: #fff;
+  border-radius: 20px;
+  box-shadow: 0 35px 80px rgba(0, 0, 0, 0.15);
+  transition: 0.5s;
+}
+.Relatecontainer .Relatecard:hover {
+  height: 400px;
+}
+.Relatecontainer .Relatecard .RelateimgBx {
+  position: absolute;
+  top: 20px;
+  width: 300px;
+  height: 220px;
 
-
-.Relatecontainer 
-{
-	position: relative;
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	flex-wrap: wrap;
-	gap: 100px 50px;
-	padding: 100px 50px;
+  border-radius: 12px;
+  overflow: hidden;
+  transition: 0.5s;
 }
-.Relatecontainer .Relatecard 
-{
-	position: relative;
-	display: flex;
-	justify-content: center;
-	align-items: flex-start;
-	width: 350px;
-	height: 300px;
-	background: #fff;
-	border-radius: 20px;
-	box-shadow: 0 35px 80px rgba(0,0,0,0.15);
-	transition: 0.5s
+.Relatecontainer .Relatecard:hover .RelateimgBx {
+  top: -100px;
+  scale: 0.75;
+  box-shadow: 0 15px 45px rgba(0, 0, 0, 0.2);
 }
-.Relatecontainer .Relatecard:hover 
-{
-	height: 400px;
+.Relatecontainer .Relatecard .RelateimgBx img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
-.Relatecontainer .Relatecard .RelateimgBx
-{
-	position: absolute;
-	top: 20px;
-	width: 300px;
-	height: 220px;
-
-	border-radius: 12px;
-	overflow: hidden;
-	transition: 0.5s;
+.Relatecontainer .Relatecard .Relatecontent {
+  position: absolute;
+  top: 252px;
+  width: 100%;
+  padding: 0 30px;
+  height: 35px;
+  overflow: hidden;
+  text-align: center;
+  transition: 0.5s;
 }
-.Relatecontainer .Relatecard:hover .RelateimgBx
-{
-	top: -100px;
-	scale: 0.75;
-	box-shadow: 0 15px 45px rgba(0,0,0,0.2);
+.Relatecontainer .Relatecard:hover .Relatecontent {
+  top: 130px;
+  height: 250px;
 }
-.Relatecontainer .Relatecard .RelateimgBx img 
-{
-	position: absolute;
-	top: 0;
-	left: 0;
-	width: 100%;
-	height: 100%;
-	object-fit: cover;
+.Relatecontainer .Relatecard .Relatecontent h2 {
+  font-size: 1.5em;
+  font-weight: 700;
+  color: var(--clr);
 }
-.Relatecontainer .Relatecard .Relatecontent 
-{
-	position: absolute;
-	top: 252px;
-	width: 100%;
-	padding: 0 30px;
-	height: 35px;
-	overflow: hidden;
-	text-align: center;
-	transition: 0.5s;
+.Relatecontainer .Relatecard .Relatecontent p {
+  color: #333;
 }
-.Relatecontainer .Relatecard:hover .Relatecontent 
-{
-	top: 130px;
-	height: 250px;
-}
-.Relatecontainer .Relatecard .Relatecontent h2 
-{
-	font-size: 1.5em;
-	font-weight: 700;
-	color: var(--clr);
-}
-.Relatecontainer .Relatecard .Relatecontent p 
-{
-	color: #333;
-}
-.Relatecontainer .Relatecard .Relatecontent a 
-{
-	position: relative;
-	top: 15px;
-	display: inline-block;
-	padding: 12px 25px;
-	background: var(--clr);
-	color: #fff;
-	font-weight: 500;
-	text-decoration: none;
-	border-radius: 8px;
+.Relatecontainer .Relatecard .Relatecontent a {
+  position: relative;
+  top: 15px;
+  display: inline-block;
+  padding: 12px 25px;
+  background: var(--clr);
+  color: #fff;
+  font-weight: 500;
+  text-decoration: none;
+  border-radius: 8px;
 }
 
-.RelateimgBx{
+.RelateimgBx {
   margin-left: 10px;
-=======
-#linksformbtn {
-  background-color: #f03636;
-  border-color: #b82111;
-  margin-top: 10px;
-  margin-bottom: 10px;
->>>>>>> 3f1454b6c05379c44054e0a89d2dfefcbb32074c
 }
 /*links page end*/
