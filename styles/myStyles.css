@@ -287,6 +287,7 @@ body {
   height: 400px;
   width: 600px;
   max-width: 400px;
+  
 }
 
 #img-gal2 {
@@ -392,6 +393,28 @@ body {
         font-weight: bold;
         font-family: Arial, sans-serif;
   text-shadow: #ffffff 2px 1px 5px;
+}
+
+.aboutowner{
+  font-weight: bold;
+  text-align: center;
+  font-size: 2em;
+  color: #ffffff;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  font-family: Arial, sans-serif;
+  text-shadow: #000000 4px 2px 10px;
+}
+
+.aboutname{
+  font-weight: bold;
+  text-align: center;
+  font-size: 2em;
+  color: #77ff00;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  font-family: Arial, sans-serif;
+  text-shadow: #000000 4px 2px 10px;
 }
 
 
