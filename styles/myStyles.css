@@ -776,8 +776,206 @@ body {
 
 /* Products Page-Bolts */
 
-/* Products Page-Bolts-end */
 
+.Relatecontainer 
+{
+	position: relative;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-wrap: wrap;
+	gap: 100px 50px;
+	padding: 100px 50px;
+}
+.Relatecontainer .Relatecard 
+{
+	position: relative;
+	display: flex;
+	justify-content: center;
+	align-items: flex-start;
+	width: 350px;
+	height: 300px;
+	background: #fff;
+	border-radius: 20px;
+	box-shadow: 0 35px 80px rgba(0,0,0,0.15);
+	transition: 0.5s
+}
+.Relatecontainer .Relatecard:hover 
+{
+	height: 400px;
+}
+.Relatecontainer .Relatecard .RelateimgBx
+{
+	position: absolute;
+	top: 20px;
+	width: 300px;
+	height: 220px;
+
+	border-radius: 12px;
+	overflow: hidden;
+	transition: 0.5s;
+}
+.Relatecontainer .Relatecard:hover .RelateimgBx
+{
+	top: -100px;
+	scale: 0.75;
+	box-shadow: 0 15px 45px rgba(0,0,0,0.2);
+}
+.Relatecontainer .Relatecard .RelateimgBx img 
+{
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}
+.Relatecontainer .Relatecard .Relatecontent 
+{
+	position: absolute;
+	top: 252px;
+	width: 100%;
+	padding: 0 30px;
+	height: 35px;
+	overflow: hidden;
+	text-align: center;
+	transition: 0.5s;
+}
+.Relatecontainer .Relatecard:hover .Relatecontent 
+{
+	top: 130px;
+	height: 250px;
+}
+.Relatecontainer .Relatecard .Relatecontent h2 
+{
+	font-size: 1.5em;
+	font-weight: 700;
+	color: var(--clr);
+}
+.Relatecontainer .Relatecard .Relatecontent p 
+{
+	color: #333;
+}
+.Relatecontainer .Relatecard .Relatecontent a 
+{
+	position: relative;
+	top: 15px;
+	display: inline-block;
+	padding: 12px 25px;
+	background: var(--clr);
+	color: #fff;
+	font-weight: 500;
+	text-decoration: none;
+	border-radius: 8px;
+}
+
+.RelateimgBx{
+  margin-left: 0px;
+}
+
+#linksformbtn {
+  background-color: #f03636;
+  border-color: #b82111;
+  margin-top: 10px;
+  margin-bottom: 10px;
+
+}
+/* Products Page-Bolts-end */
+.Relatecontainer {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 100px 50px;
+  padding: 100px 50px;
+}
+.Relatecontainer .Relatecard {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  width: 350px;
+  height: 300px;
+  background: #fff;
+  border-radius: 20px;
+  box-shadow: 0 35px 80px rgba(0, 0, 0, 0.15);
+  transition: 0.5s;
+}
+.Relatecontainer .Relatecard:hover {
+  height: 400px;
+}
+.Relatecontainer .Relatecard .RelateimgBx {
+  position: absolute;
+  top: 20px;
+  width: 300px;
+  height: 220px;
+
+
+
+  border-radius: 12px;
+  overflow: hidden;
+  transition: 0.5s;
+}
+.Relatecontainer .Relatecard:hover .RelateimgBx {
+  top: -100px;
+  scale: 0.75;
+  box-shadow: 0 15px 45px rgba(0, 0, 0, 0.2);
+}
+.Relatecontainer .Relatecard .RelateimgBx img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.Relatecontainer .Relatecard .Relatecontent {
+  position: absolute;
+  top: 252px;
+  width: 100%;
+  padding: 0 30px;
+  height: 35px;
+  overflow: hidden;
+  text-align: center;
+  transition: 0.5s;
+}
+.Relatecontainer .Relatecard:hover .Relatecontent {
+  top: 130px;
+  height: 250px;
+}
+.Relatecontainer .Relatecard .Relatecontent h2 {
+  font-size: 1.5em;
+  font-weight: 700;
+  color: var(--clr);
+}
+.Relatecontainer .Relatecard .Relatecontent p {
+  color: #333;
+}
+.Relatecontainer .Relatecard .Relatecontent a {
+  position: relative;
+  top: 15px;
+  display: inline-block;
+  padding: 12px 25px;
+  background: var(--clr);
+  color: #fff;
+  font-weight: 500;
+  text-decoration: none;
+  border-radius: 8px;
+}
+
+.RelateimgBx {
+  margin-left: 10px;
+}
+
+
+#linksformbtn {
+  background-color: #f03636;
+  border-color: #b82111;
+  margin-top: 10px;
+  margin-bottom: 10px;
+
+}
 /* Contact Page */
 
 /* Contact Page-end */
@@ -898,15 +1096,34 @@ body {
 
 /*links page start*/
 .bg-image {
-  position: fixed;
+  position: absolute; /* Changed from 'fixed' to 'absolute' */
   top: 0;
   left: 0;
   width: 100%;
-  height: 100%;
+  height: calc(100% - 30px); /* Adjusted height to stop a bit after social media cards */
   object-fit: cover;
   z-index: -1;
   opacity: 0.8;
   filter: blur(4px);
+}
+
+/* Banner Styles */
+.banner {
+  position: relative;
+  width: 100%;
+  padding: 20px 0;
+  background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 1) 100%), url('/images/contactbanner.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  text-align: center;
+  z-index: 1000;
+}
+
+.banner-title {
+  font-size: 2em;
+  font-weight: bold;
+  color: #333;
+  margin: 0;
 }
 
 .social-media-cards {
@@ -962,11 +1179,11 @@ body {
   margin-top: 30px;
 }
 
-h2 {
-  font-size: 24px;
+.related-products-heading {
+  font-size: 40px;
   font-weight: 600;
   color: #333;
-  text-align: center;
+  text-align: left;
   margin-bottom: 20px;
 }
 
@@ -1033,99 +1250,5 @@ form {
 }
 
 
-.Relatecontainer {
-  position: relative;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-wrap: wrap;
-  gap: 100px 50px;
-  padding: 100px 50px;
-}
-.Relatecontainer .Relatecard {
-  position: relative;
-  display: flex;
-  justify-content: center;
-  align-items: flex-start;
-  width: 350px;
-  height: 300px;
-  background: #fff;
-  border-radius: 20px;
-  box-shadow: 0 35px 80px rgba(0, 0, 0, 0.15);
-  transition: 0.5s;
-}
-.Relatecontainer .Relatecard:hover {
-  height: 400px;
-}
-.Relatecontainer .Relatecard .RelateimgBx {
-  position: absolute;
-  top: 20px;
-  width: 300px;
-  height: 220px;
 
-
-
-  border-radius: 12px;
-  overflow: hidden;
-  transition: 0.5s;
-}
-.Relatecontainer .Relatecard:hover .RelateimgBx {
-  top: -100px;
-  scale: 0.75;
-  box-shadow: 0 15px 45px rgba(0, 0, 0, 0.2);
-}
-.Relatecontainer .Relatecard .RelateimgBx img {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-}
-.Relatecontainer .Relatecard .Relatecontent {
-  position: absolute;
-  top: 252px;
-  width: 100%;
-  padding: 0 30px;
-  height: 35px;
-  overflow: hidden;
-  text-align: center;
-  transition: 0.5s;
-}
-.Relatecontainer .Relatecard:hover .Relatecontent {
-  top: 130px;
-  height: 250px;
-}
-.Relatecontainer .Relatecard .Relatecontent h2 {
-  font-size: 1.5em;
-  font-weight: 700;
-  color: var(--clr);
-}
-.Relatecontainer .Relatecard .Relatecontent p {
-  color: #333;
-}
-.Relatecontainer .Relatecard .Relatecontent a {
-  position: relative;
-  top: 15px;
-  display: inline-block;
-  padding: 12px 25px;
-  background: var(--clr);
-  color: #fff;
-  font-weight: 500;
-  text-decoration: none;
-  border-radius: 8px;
-}
-
-.RelateimgBx {
-  margin-left: 10px;
-}
-
-
-#linksformbtn {
-  background-color: #f03636;
-  border-color: #b82111;
-  margin-top: 10px;
-  margin-bottom: 10px;
-
-}
 /*links page end*/
