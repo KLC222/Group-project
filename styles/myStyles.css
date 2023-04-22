@@ -1244,7 +1244,7 @@ body {
   left: 0;
   z-index: 6;
   color: white;
-  background: #ffffff -webkit-gradient(linear, 100% 0, 0 0, from(#ffffff), color-stop(0.5, #b82111), to(#ffffff));
+  background: #ffffff -webkit-gradient(linear, 100% 0, 0 0, from(#b82111), color-stop(0.5, #b82111), to(#b82111));
   background-position: -4rem top; /* 50px */
   background-repeat: no-repeat;
   -webkit-background-clip: text;
@@ -1259,6 +1259,7 @@ body {
   0% {
     background-position: -4rem top; /* 50px */
   }
+
   100% {
     background-position: 20.5rem top; /* 200px */
   }
@@ -1356,15 +1357,15 @@ form {
 }
 
 .form-control:focus {
-  border-color: #59bdff;
+  border-color: #b14034;
   outline: 0;
-  box-shadow: 0 0 8px #217aa3;
+  box-shadow: 0 0 8px #b14034;
 }
 
 /* Button Styles */
 #linksformbtn {
-  background-color: #007bff;
-  border-color: #007bff;
+  background-color: #b14034;
+  border-color: #b14034;
   color: #fff;
   cursor: pointer;
   font-size: 14px;
@@ -1376,8 +1377,8 @@ form {
 }
 
 #linksformbtn:hover {
-  background-color: #0056b3;
-  border-color: #0056b3;
+  background-color: #990f00;
+  border-color: #990f00;
 }
 
 /* User Styles */
