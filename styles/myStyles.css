@@ -1119,11 +1119,7 @@ body {
 /* Gallery Page-end */
 
 /*links page start*/
-.bg-img-links {
-  position: relative;
-  width: 100%;
-  text-align: center;
-}
+
 
 .banner-image {
   width: 100%;
@@ -1184,13 +1180,7 @@ body {
   z-index: 2;
 }
 
-.social-media-container {
-  position: absolute;
-  bottom: -400px; /* Adjust this value to control the distance from the bottom of the banner image */
-  left: 50%;
-  transform: translateX(-50%);
-  z-index: 2;
-}
+
 
 @keyframes rotate {
   0% {
@@ -1275,7 +1265,15 @@ body {
 }
 
 
+.social-media-container {
+  margin-top: -400px;
+}
 
+@media screen and (max-width: 768px) {
+  .social-media-container {
+    margin-top: -150px; /* Adjust this value as needed for smaller devices */
+  }
+}
 
 .social-media-cards {
   display: flex;
@@ -1309,9 +1307,7 @@ body {
 }
 
 /* General Styles */
-body {
-  font-family: Arial, sans-serif;
-}
+
 
 .formcontrollinks {
   position: relative; /* Add position relative */
@@ -1321,8 +1317,8 @@ body {
   background-color: #f9f9f9;
   border-radius: 5px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.534);
-  margin-bottom: 300px;
-  margin-top: 700px; /* Add negative margin to move the form up */
+  margin-bottom: 200px;
+  margin-top: 200px; /* Add negative margin to move the form up */
   z-index: 3; /* Add z-index to place form above the banner image */
 }
 
