@@ -409,15 +409,59 @@ body {
   font-weight: bold;
   text-align: center;
   font-size: 2em;
-  color: #77ff00;
+  color: #ff0000;
   text-transform: uppercase;
   letter-spacing: 3px;
   font-family: Arial, sans-serif;
   text-shadow: #000000 4px 2px 10px;
+  
 }
 
-#video{
+#video {
   margin: 0 auto;
+}
+
+.box {
+  display: inline-block;
+  width: 300px;
+  margin: 10px;
+  text-align: center;
+}
+
+.box img {
+  width: 100%;
+  height: auto;
+}
+
+.box h2 {
+  margin-top: 20px;
+  font-size: 24px;
+  font-weight: bold;
+  color: #ffffff;
+}
+
+.box p {
+  margin-top: 10px;
+  font-size: 29px;
+  line-height: 1.4;
+  color: #000000;
+  font-weight: bold;
+}
+
+.bio{
+  color: #ffffff;
+  font-weight: bold;
+  font-size: 24px;
+  text-shadow: #000000 4px 2px 10px;
+  text-align: center;
+}
+
+.Youtube{
+  color: #ff0000;
+  font-weight: bold;
+  font-size: 30px;
+  text-shadow: #000000 4px 2px 10px;
+  text-align: center;
 }
 
 /* About Page-end */
@@ -1020,8 +1064,9 @@ body {
   background-color: rgba(0, 0, 0, 0.1);
 }
 .text-deco {
+  font-family: Eras, sans-serif;
   color: white;
-  text-shadow: #ffffff 2px 1px 5px;
+  text-shadow: #ffffff 2px 1px 10px;
 }
 .text-deco2 {
   text-shadow: black 2px 1px 6px;
@@ -1115,8 +1160,6 @@ body {
 /* Gallery Page-end */
 
 /*links page start*/
-
-
 
 .banner-image {
   width: 100%;
@@ -1264,9 +1307,6 @@ body {
     background-position: 20.5rem top; /* 200px */
   }
 }
-
-
-
 
 .contactUs {
   position: relative;
@@ -1452,11 +1492,8 @@ form {
   font-style: italic;
 }
 
-
 .image-container {
-  height: 60px; 
+  height: 60px;
 }
-
-
 
 /*links page end*/
