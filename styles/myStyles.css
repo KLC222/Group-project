@@ -416,6 +416,10 @@ body {
   text-shadow: #000000 4px 2px 10px;
 }
 
+#video{
+  margin: 0 auto;
+}
+
 /* About Page-end */
 
 /* Products Page */
