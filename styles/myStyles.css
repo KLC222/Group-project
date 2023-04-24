@@ -436,13 +436,18 @@ body {
   margin-top: 20px;
   font-size: 24px;
   font-weight: bold;
+  color: #ffffff;
 }
 
 .box p {
   margin-top: 10px;
-  font-size: 16px;
+  font-size: 29px;
   line-height: 1.4;
+  color: #000000;
+  font-weight: bold;
 }
+
+
 
 
 
