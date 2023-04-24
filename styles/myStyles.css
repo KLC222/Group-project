@@ -1276,12 +1276,29 @@ body {
   }
 }
 
+.cards-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.linkscardsm {
+  flex: 0 0 calc(33.333% - 40px);
+  margin: 0 20px 20px;
+  text-align: center;
+}
+
+@media screen and (max-width: 768px) {
+  .linkscardsm {
+    flex: 0 0 100%;
+    margin: 0 0 20px;
+  }
+}
+
 .social-media-cards {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  align-items: center;
-  flex-direction: column;
 }
 
 .linkscardsm {
