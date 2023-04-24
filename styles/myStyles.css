@@ -416,7 +416,7 @@ body {
   text-shadow: #000000 4px 2px 10px;
 }
 
-#video{
+#video {
   margin: 0 auto;
 }
 
@@ -446,16 +446,6 @@ body {
   color: #000000;
   font-weight: bold;
 }
-
-
-
-
-
-
-
-
-
-
 
 /* About Page-end */
 
@@ -1046,8 +1036,9 @@ body {
   background-color: rgba(0, 0, 0, 0.1);
 }
 .text-deco {
+  font-family: Eras, sans-serif;
   color: white;
-  text-shadow: #ffffff 2px 1px 5px;
+  text-shadow: #ffffff 2px 1px 10px;
 }
 .text-deco2 {
   text-shadow: black 2px 1px 6px;
@@ -1141,8 +1132,6 @@ body {
 /* Gallery Page-end */
 
 /*links page start*/
-
-
 
 .banner-image {
   width: 100%;
@@ -1290,9 +1279,6 @@ body {
     background-position: 20.5rem top; /* 200px */
   }
 }
-
-
-
 
 .contactUs {
   position: relative;
@@ -1478,11 +1464,8 @@ form {
   font-style: italic;
 }
 
-
 .image-container {
-  height: 60px; 
+  height: 60px;
 }
-
-
 
 /*links page end*/
