@@ -420,6 +420,38 @@ body {
   margin: 0 auto;
 }
 
+.box {
+  display: inline-block;
+  width: 300px;
+  margin: 10px;
+  text-align: center;
+}
+
+.box img {
+  width: 100%;
+  height: auto;
+}
+
+.box h2 {
+  margin-top: 20px;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.box p {
+  margin-top: 10px;
+  font-size: 16px;
+  line-height: 1.4;
+}
+
+
+
+
+
+
+
+
+
 /* About Page-end */
 
 /* Products Page */
