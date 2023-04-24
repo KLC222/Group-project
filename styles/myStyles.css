@@ -536,6 +536,14 @@ body {
   object-fit: cover; /* This makes sure the image is resized and cropped to fit the container */
 }
 
+.toTop {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+  border: 3px solid green; 
+}
+
 /* Products Page-end */
 
 .content-wrapper {
@@ -602,7 +610,10 @@ body {
 .enquire-btn {
   background-color: #f1581c;
   color: #fff;
+  max-width: 200px;
+  
 }
+
 
 .buy-btn {
   background-color: #f1581c;
