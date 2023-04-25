@@ -196,6 +196,26 @@ document.addEventListener("DOMContentLoaded", function () {
   // ... (your existing code)
 });
 
+
+document.addEventListener('DOMContentLoaded', () => {
+  const form = document.querySelector('.enquiry-form');
+  const checkmarkContainer = document.querySelector('.checkmark-container');
+
+  form.addEventListener('submit', (e) => {
+    e.preventDefault();
+
+    // Display the checkmark and hide the form
+    form.style.display = 'none';
+    checkmarkContainer.style.display = 'flex';
+
+    // Wait for 2 seconds before hiding the checkmark
+    setTimeout(() => {
+      checkmarkContainer.style.display = 'none';
+    }, 10000);
+  });
+});
+
+
 //PRODUCTS BOLTS PAGE END
 
 //About Page

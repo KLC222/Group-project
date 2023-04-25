@@ -188,6 +188,7 @@ table {
   border-spacing: 0;
   width: 100%;
   table-layout: fixed;
+  
 }
 
 .shopping-cart th {
@@ -227,11 +228,13 @@ table {
   padding: 0;
   list-style: none;
   text-align: center;
+ 
 }
 
 #shopping-cart-actions li {
   display: inline-block;
   margin-right: 1em;
+  
 }
 
 #pricing {
