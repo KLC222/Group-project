@@ -8,6 +8,11 @@ function changeTextColor() {
 
 //PRODUCTS PAGE SCRIPT
 
+
+
+
+
+
 document.addEventListener("DOMContentLoaded", function () {
   const searchBar = document.getElementById("search-bar");
   const productContainer = document.getElementById("product-container");
@@ -91,6 +96,28 @@ document.addEventListener("DOMContentLoaded", function () {
       }, 300);
     }
   };
+});
+
+function scrollToTop() {
+  window.scrollTo({
+    top: 0,
+    behavior: 'smooth'
+  });
+}
+
+function toggleToTopBtnVisibility() {
+  const toTopBtn = document.querySelector('.toTopBtn');
+  if (window.scrollY > 1200) {
+    toTopBtn.style.display = 'block';
+  } else {
+    toTopBtn.style.display = 'none';
+  }
+}
+
+document.addEventListener('DOMContentLoaded', () => {
+  const toTopBtn = document.querySelector('.toTopBtn');
+  toTopBtn.addEventListener('click', scrollToTop);
+  window.addEventListener('scroll', toggleToTopBtnVisibility);
 });
 
 //PRODUCTS PAGE SCRIPT END
