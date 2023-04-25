@@ -403,6 +403,7 @@ body {
   letter-spacing: 3px;
   font-family: Arial, sans-serif;
   text-shadow: #000000 4px 2px 10px;
+  margin-top: 100px;
 }
 
 .aboutname {
@@ -420,6 +421,8 @@ body {
 #video {
   margin: 0 auto;
 }
+
+
 
 .box {
   display: inline-block;
@@ -1064,12 +1067,7 @@ body {
   border-radius: 8px;
 }
 
-@media (max-width: 480px) {
-  .RelateimgBx {
-    width: 80%; /* Adjust the size of the image to be smaller on small devices */
-    max-width: 80%;
-  }
-}
+ 
 #linksformbtn {
   background-color: #f03636;
   border-color: #b82111;
