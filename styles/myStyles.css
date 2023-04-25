@@ -563,6 +563,16 @@ body {
   color: white;
 }
 
+.toTopBtn .btn:hover {
+  background-color: #b82111;
+  color: white;
+}
+
+.toTopBtn .btn:active {
+  background-color: rgb(252, 92, 0);
+  border-color: white;
+}
+
 .product-box .btn:active {
   background-color: rgb(252, 92, 0);
   border-color: white;
@@ -592,7 +602,13 @@ body {
   left: 50%;
   transform: translateX(-50%);
 }
+
 .toTop {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+  border: 3px solid rgb(0, 0, 0); 
   background-color: #ff3300;
   color: white;
   padding: 10px 20px;
@@ -602,6 +618,21 @@ body {
   max-width: 200px;
   width: 200px;
 }
+
+
+
+.btn {
+  background-color: #f03636;
+  border-color: red;
+  color: white;
+  padding: 10px 20px;
+  cursor: pointer;
+  border: none;
+  border-radius: 5px;
+  max-width: 200px;
+  width: 200px;
+}
+
 
 /* Products Page-end */
 
@@ -623,14 +654,6 @@ body {
 
 }
 
-.show-popup-form {
-  background-color: #007bff;
-  color: white;
-  padding: 10px 20px;
-  cursor: pointer;
-  border: none;
-  border-radius: 5px;
-}
 
 .product-image-wrapper {
   position: relative;
@@ -738,7 +761,7 @@ body {
 
 @media (max-width: 480px) {
   .Relatecontent {
-    font-size: 11.2px; 
+    font-size: 10.2px; 
   }
 }
 
@@ -747,6 +770,7 @@ body {
     margin-top: 15px; 
   }
 }
+
 
 .content-wrapper {
   display: flex;
@@ -851,31 +875,31 @@ body {
 }
 
 .enquiry-form button[type="submit"] {
-  background-color: #007bff;
+  background-color: #f03636;
   color: white;
   border: none;
 }
 
 .enquiry-form button[type="submit"]:hover {
-  background-color: #0056b3;
+  background-color: #f33615;
 }
 
 .enquiry-form button[type="submit"]:active {
-  background-color: #004085;
+  background-color: #f1581c;
 }
 
 .enquiry-form button[type="button"] {
-  background-color: #dc3545;
+  background-color: #a1a1a1;
   color: white;
   border: none;
 }
 
 .enquiry-form button[type="button"]:hover {
-  background-color: #c82333;
+  background-color: #c2c2c2;
 }
 
 .enquiry-form button[type="button"]:active {
-  background-color: #bd2130;
+  background-color: #dadada;
 }
 
 .hidden {
