@@ -150,10 +150,10 @@ function addImageZoom() {
 }
 
 document.addEventListener("DOMContentLoaded", function () {
-  // Add the following line inside the DOMContentLoaded event handler:
+  
   addImageZoom();
 
-  // ... (your existing code)
+
 });
 
 function handleForm() {
@@ -179,7 +179,7 @@ function handleForm() {
     .addEventListener("submit", (event) => {
       event.preventDefault();
 
-      // Handle form submission logic here, e.g. sending data to a server
+
 
       const formContainer = document.querySelector(".form-container");
       formContainer.style.opacity = "0";
@@ -190,7 +190,7 @@ function handleForm() {
 }
 
 document.addEventListener("DOMContentLoaded", function () {
-  // Add the following line inside the DOMContentLoaded event handler:
+ 
   handleForm();
 
   // ... (your existing code)
